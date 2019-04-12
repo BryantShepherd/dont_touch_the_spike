@@ -42,7 +42,7 @@ public:
     static int getWidth();
     static int getHeight();
 
-protected:
+protected: /*tai sao lai dung protected?*/
     static int WIDTH;
     static int HEIGHT;
 

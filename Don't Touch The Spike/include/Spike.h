@@ -22,12 +22,13 @@ public:
     Spike();
     ~Spike();
     void loadFromFile(string path, SDL_Renderer* renderer);
+    void setSpikesNumber(int &score);
     void free();
-    void update(int status, bool hit);
+    void update(int status, bool hit, int &score);
     void render(int x, int y, int w, int h, SDL_Renderer* renderer, int status);
     float getX(int i);
     float getY(int i);
-    int getWidgh();
+    int getWidth();
     int getHeight();
     int getQuality();
 

@@ -131,8 +131,8 @@ void MainControl::handleEvent()
 
 void MainControl::update()
 {
-    bird->update(status, hit,score);
-    spike->update(status, hit);
+    bird->update(status, hit, score);
+    spike->update(status, hit, score);
 }
 
 void MainControl::render()
@@ -150,7 +150,7 @@ void MainControl::render()
         bird->render(bird->getX(),bird->getY(), bird->getWidth(), bird->getHeight(), renderer, status);
         for (int i = 0; i< spike->getQuality(); i++)
         {
-            spike->render(spike->getX(i), spike->getY(i), spike->getWidgh(), spike->getHeight(), renderer, status);
+            spike->render(spike->getX(i), spike->getY(i), spike->getWidth(), spike->getHeight(), renderer, status);
         }
 
         SDL_RenderPresent(renderer);

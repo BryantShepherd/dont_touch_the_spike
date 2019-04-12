@@ -3,10 +3,11 @@
  - Chiều cao của map sẽ phải chứa được 11 cái gai. Khoảng cách giữa 2 gai phải đủ để có thể đi vào giữa để đảm bảo luôn chơi được game.
  - Số gai sẽ tăng dần từ 2 cho tới 8. 
    + 0-3 điểm: 2 gai.
-   + 3-6 điểm: 3 gai.
-   + 6-10 điểm: 4 gai.
+   + 4-6 điểm: 3 gai.
+   + 7-10 điểm: 4 gai.
    + 10-15 điểm: 5 gai.
    + 15-25 điểm: 6 gai.
    + 25-50 điểm: 7 gai.
    + >50 điểm: 8 gai.
  - Gai có hình tam giác. Khi va chạm thì chim sẽ rơi như trong trò chơi, giúp người chơi khó nhận biết được lỗi va chạm (nếu có).
+ - Khi va chạm với tường, cần dựa vào hướng chim bay để va chạm tự nhiên nhất. (nếu chim đang rơi thì sau va chạm vẫn phải rơi tiếp)

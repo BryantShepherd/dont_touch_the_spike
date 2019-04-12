@@ -7,10 +7,10 @@ using namespace std;
 Spike::Spike()
 {
     srand((int) time(0));
-    quality = 9;
+    quality = 0; //dua vao so diem ma hien so gai tuong ung
     x = new float[quality];
     y = new float[quality];
-    for( int i = 0; i<quality; i++)
+    for( int i = 0; i<quality; i++) //neu trung thi sao
     {
         x[i] = SCREEN_WIDTH-30;
         y[i] = (0 + rand() % (60 + 1 - 0))*10;
@@ -66,6 +66,16 @@ void Spike::free()
     }
 }
 
+void Spike::setSpikesNumber(int &score)
+{
+    if (score <= 1) quality = 2;
+    else if(score <= 4) quality = 3;
+    else if (score <= 10) quality = 4;
+    else if (score <= 15) quality = 5;
+    else if (score <= 25) quality = 6;
+    else if(score <= 40) quality = 7;
+    else quality = 8;
+}
 void Spike::render( int x, int y, int w, int h, SDL_Renderer* renderer, int status)
 {
     SDL_Rect renderQuad = { x, y, w, h };
@@ -79,11 +89,12 @@ void Spike::render( int x, int y, int w, int h, SDL_Renderer* renderer, int stat
     }
 }
 
-void Spike::update(int status, bool hit)
+void Spike::update(int status, bool hit, int &score)
 {
     srand((int) time(0));
     if(hit == true)
     {
+        setSpikesNumber(score);
         if(status == 0)
         {
             for(int i = 0; i < quality; i++)
@@ -113,7 +124,7 @@ float Spike::getY(int i)
     return y[i];
 }
 
-int Spike::getWidgh()
+int Spike::getWidth()
 {
     return width;
 }

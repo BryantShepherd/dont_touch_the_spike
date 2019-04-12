@@ -74,7 +74,7 @@ void Bird::render( int x, int y, int w, int h, SDL_Renderer* renderer, int statu
 }
 void Bird::update(int &status, bool &hit, int &score)
 {
-    hit = false;
+    hit = false; //dx, day la gi, de lam gi?
     if(status == 0)
     {
         dx += 0.05;
