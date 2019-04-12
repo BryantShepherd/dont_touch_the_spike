@@ -132,7 +132,7 @@ void Bird::handleEvent(SDL_Event &event, int status)
             else
             {
                 dx = -2;
-                dy = -7.5;
+                dy = -7.5 ;
             }
         }
         break;
