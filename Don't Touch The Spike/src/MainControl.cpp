@@ -87,7 +87,7 @@ void MainControl::handleEvent()
             if((bird->getY()+24 >= spike->getY(i))
                     &&(bird->getY() <= spike->getY(i)+10)
                     &&(bird->getX()+34 >= spike->getX(i))
-                    &&(bird->getX() <= spike->getX(i)+30))
+                    &&(bird->getX() <= spike->getX(i)+30)) //bird hit spikes
                 end_loop = true;
         }
         else

@@ -26,6 +26,7 @@ public:
     void free();
     void update(int status, bool hit, int &score);
     void render(int x, int y, int w, int h, SDL_Renderer* renderer, int status);
+    void moveSpikes(int i, float dist_x, float dist_y);
     float getX(int i);
     float getY(int i);
     int getWidth();

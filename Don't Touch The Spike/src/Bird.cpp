@@ -75,12 +75,12 @@ void Bird::render( int x, int y, int w, int h, SDL_Renderer* renderer, int statu
 void Bird::update(int &status, bool &hit, int &score)
 {
     hit = false; //dx, day la gi, de lam gi?
-    if(status == 0)
+    if(status == GOING_RIGHT)
     {
         dx += 0.05;
         dy += 0.3;
     }
-    else
+    else //status == GOING_LEFT
     {
         dx -= 0.05;
         dy += 0.3;

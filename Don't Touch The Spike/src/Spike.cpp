@@ -114,6 +114,11 @@ void Spike::update(int status, bool hit, int &score)
     }
 }
 
+void Spike::moveSpikes(int i, float dist_x, float dist_y)
+{
+    x[i] += dist_x;
+    y[i] += dist_y;
+}
 float Spike::getX(int i)
 {
     return x[i];
