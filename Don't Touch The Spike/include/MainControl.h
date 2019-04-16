@@ -11,7 +11,7 @@
 #include "Bird.h"
 #include "Spike.h"
 #include "Background.h"
-#include "MainControl.h"
+//#include "spikeHard.h"
 
 using namespace std;
 

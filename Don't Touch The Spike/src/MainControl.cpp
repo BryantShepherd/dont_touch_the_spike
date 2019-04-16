@@ -80,14 +80,14 @@ void MainControl::loadFromFile()
 
 void MainControl::handleEvent()
 {
-    for( int i = 0; i < spike->getQuality(); i++)
+    for( int i = 0; i < spike->getQuality(); i++) //detect collision
     {
         if( status == 0)
         {
             if((bird->getY()+24 >= spike->getY(i))
                     &&(bird->getY() <= spike->getY(i)+10)
                     &&(bird->getX()+34 >= spike->getX(i))
-                    &&(bird->getX() <= spike->getX(i)+30)) //bird hit spikes
+                    &&(bird->getX() <= spike->getX(i)+30)) //bird hit left/right spikes
                 end_loop = true;
         }
         else
@@ -100,7 +100,7 @@ void MainControl::handleEvent()
         }
     }
 
-    if(bird->getY() == 0 || bird->getY() == SCREEN_HEIGHT-24)
+    if(bird->getY() == 0 || bird->getY() == SCREEN_HEIGHT-24) //bird hit top/bottom spikes
     {
         end_loop = true;
     }

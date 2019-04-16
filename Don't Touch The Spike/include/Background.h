@@ -8,10 +8,10 @@
 //#include <SDL_mixer.h>
 //#include <SDL_ttf.h>
 
-#include "Bird.h"
-#include "Spike.h"
-#include "Background.h"
-#include "MainControl.h"
+//#include "Bird.h"
+//#include "Spike.h"
+//#include "Background.h"
+//#include "MainControl.h"
 
 using namespace std;
 

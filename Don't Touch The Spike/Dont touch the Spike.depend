@@ -2132,28 +2132,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1555068045 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\bird.h
+1555207852 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\bird.h
 	<iostream>
 	<string>
 	<SDL.h>
 	<SDL_image.h>
-	"Bird.h"
-	"Spike.h"
-	"Background.h"
-	"MainControl.h"
 
-1555149681 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\spike.h
+1555286437 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\spike.h
 	<iostream>
 	<string>
 	<random>
 	<time.h>
 	<SDL.h>
 	<SDL_image.h>
-	"Bird.h"
-	"Background.h"
-	"MainControl.h"
 
-1555068045 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\background.h
+1555207991 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\background.h
+	<iostream>
+	<string>
+	<SDL.h>
+	<SDL_image.h>
+
+1555208031 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\maincontrol.h
 	<iostream>
 	<string>
 	<SDL.h>
@@ -2161,42 +2160,28 @@
 	"Bird.h"
 	"Spike.h"
 	"Background.h"
+
+1555208122 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\background.cpp
 	"MainControl.h"
 
-1555152697 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\maincontrol.h
-	<iostream>
-	<string>
-	<SDL.h>
-	<SDL_image.h>
-	"Bird.h"
-	"Spike.h"
-	"Background.h"
+1555208122 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\bird.cpp
 	"MainControl.h"
 
-1555068045 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\background.cpp
-	"Background.h"
-
-1555068045 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\bird.cpp
-	"Bird.h"
-
-1555068045 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\maincontrol.cpp
+1555153263 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\maincontrol.cpp
 	"MainControl.h"
 
-1555149678 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\spike.cpp
-	"Spike.h"
+1555213044 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\spike.cpp
+	"MainControl.h"
 
-1555152368 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\spikehard.cpp
+1555286422 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\src\spikehard.cpp
+	"MainControl.h"
 	"spikeHard.h"
 
-1555149820 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\spikehard.h
+1555286439 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\don't touch the spike\include\spikehard.h
 	<iostream>
 	<string>
 	<random>
 	<time.h>
 	<SDL.h>
 	<SDL_image.h>
-	"Bird.h"
-	"Background.h"
-	"MainControl.h"
-	<Spike.h>
 

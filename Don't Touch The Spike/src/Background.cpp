@@ -1,5 +1,5 @@
-#include "Background.h"
-
+//#include "Background.h"
+#include "MainControl.h"
 using namespace std;
 
 Background::Background()

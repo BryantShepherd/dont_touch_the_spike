@@ -1,4 +1,5 @@
- #include "Bird.h"
+// #include "Bird.h"
+ #include "MainControl.h"
 
 using namespace std;
 
