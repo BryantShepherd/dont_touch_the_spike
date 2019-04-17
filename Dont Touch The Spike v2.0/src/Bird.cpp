@@ -10,6 +10,9 @@ Bird::Bird()
     dy = 0;
     change_in_dx = 0.05;
     change_in_dy = 0.3;
+    change_press_dx = 2;
+    change_press_dy = -7.5;
+    //fix loi dap tuong
 }
 
 Bird::~Bird()
@@ -21,6 +24,10 @@ Bird::~Bird()
     width.clear();
     height.clear();
     texture.clear();
+    change_in_dx = 0;
+    change_in_dy = 0;
+    change_press_dx = 0;
+    change_press_dy = 0;
 }
 
 void Bird::loadTexture(SDL_Renderer* renderer)
@@ -41,13 +48,13 @@ void Bird::handleEvent(SDL_Event event, int &status)
         {
             if(status == GO_LEFT)
             {
-                dx = 2;
-                dy = -7.5;
+                dx = change_press_dx; //change in velocity when press SPACE
+                dy = change_press_dy;
             }
             else if(status == GO_RIGHT)
             {
-                dx = -2;
-                dy = -7.5;
+                dx = (-1)*change_press_dx;
+                dy = change_press_dy;
             }
         }
         break;
@@ -109,4 +116,16 @@ float Bird::getDx()
 float Bird::getDy()
 {
     return dy;
+}
+
+HardBird::HardBird()
+{
+    x.push_back(0);
+    y.push_back(SCREEN_HEIGHT/2.0);
+    dx = 0;
+    dy = 0;
+    change_in_dx = 0.1;
+    change_in_dy = 0.3;
+    change_press_dx = 4;
+    change_press_dy = -7.5;
 }

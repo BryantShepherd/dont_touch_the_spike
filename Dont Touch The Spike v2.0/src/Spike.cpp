@@ -13,8 +13,6 @@ Spike::~Spike()
 {
     x.clear();
     y.clear();
-    dx.clear();
-    dy.clear();
     width.clear();
     height.clear();
     texture.clear();
@@ -28,7 +26,7 @@ void Spike::loadTexture(SDL_Renderer* renderer)
 void Spike::update(int &status, int & score, bool &isHittingWall)
 {
     srand((int) time(0));
-    if(isHittingWall == true)
+    if(isHittingWall == true) //when bird hit wall, generate randomly-positioned spikes
     {
         setSpikeNumber(score);
         x.clear();
@@ -75,12 +73,27 @@ int Spike::getSpikeNumber()
     return spike_number;
 }
 
-float Spike::getDx(int i)
+void HardSpike::moveSpikes(int i, float dis_x, float dis_y)
 {
-    return dx.at(i);
+    x[i] += dis_x;
+    y[i] += dis_y;
 }
 
-float Spike::getDy(int i)
+void HardSpike::hardUpdate()
 {
-    return dy.at(i);
+    for(int i = 0; i < getSpikeNumber(); i++) //voi tat ca gai
+    {
+        switchDirectionCounter++;
+//        cout << switchDirectionCounter << " ";
+        if (switchDirectionCounter > 15*getSpikeNumber())
+        {
+            moveSpikes(i, 0, -2);
+            if(switchDirectionCounter == 30*getSpikeNumber()) switchDirectionCounter = 0;
+        }
+        else
+        {
+            moveSpikes(i, 0, 2);
+        }
+
+    }
 }

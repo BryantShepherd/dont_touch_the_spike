@@ -28,10 +28,17 @@ public:
 
 protected:
     float dx, dy;
-    float change_in_dx, change_in_dy;
+    //to change bird properties more easily
+    float change_in_dx, change_in_dy; //gravity
+    float change_press_dx, change_press_dy; //change of velocity when press SPACE
 
 private:
 
 };
 
+class HardBird: public Bird
+{
+public:
+    HardBird();
+};
 #endif // BIRD_H
