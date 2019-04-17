@@ -23,11 +23,12 @@ public:
     void handleEvent(SDL_Event event, int &status);                 //hàm nhận tín hiệu bàn phím cửa chim
     void update(int &status, int &score, bool &isHittingWall);      //hàm update vị trí con chim
 
-    float getDx(int i);
-    float getDy(int i);
+    float getDx();
+    float getDy();
 
 protected:
-    vector <float> dx, dy;
+    float dx, dy;
+    float change_in_dx, change_in_dy;
 
 private:
 

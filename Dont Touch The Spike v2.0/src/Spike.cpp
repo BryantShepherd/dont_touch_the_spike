@@ -30,20 +30,7 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
     srand((int) time(0));
     if(isHittingWall == true)
     {
-        if (score <= 1)
-            spike_number = 2;
-        else if(score <= 4)
-            spike_number = 3;
-        else if (score <= 10)
-            spike_number = 4;
-        else if (score <= 15)
-            spike_number = 5;
-        else if (score <= 25)
-            spike_number = 6;
-        else if(score <= 40)
-            spike_number = 7;
-        else
-            spike_number = 8;
+        setSpikeNumber(score);
         x.clear();
         y.clear();
         if(status == GO_LEFT)
@@ -63,6 +50,24 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
             }
         }
     }
+}
+
+void Spike::setSpikeNumber(int &score)
+{
+    if (score <= 1)
+            spike_number = 2;
+        else if(score <= 4)
+            spike_number = 3;
+        else if (score <= 10)
+            spike_number = 4;
+        else if (score <= 15)
+            spike_number = 5;
+        else if (score <= 25)
+            spike_number = 6;
+        else if(score <= 40)
+            spike_number = 7;
+        else
+            spike_number = 8;
 }
 
 int Spike::getSpikeNumber()

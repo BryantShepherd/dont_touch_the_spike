@@ -19,13 +19,14 @@ class Spike: public Texture
 public:
     Spike();
     ~Spike();
-    void loadTexture(SDL_Renderer* renderer);
 
+    void loadTexture(SDL_Renderer* renderer);
     void update(int &status, int &score, bool &isHittingWall);
 
     float getDx(int i);
     float getDy(int i);
     int getSpikeNumber();
+    void setSpikeNumber(int &score);
 
 protected:
     vector <float> dx,dy;   //t khai báo sẵn vận tốc gai cho rồi đấy :D
