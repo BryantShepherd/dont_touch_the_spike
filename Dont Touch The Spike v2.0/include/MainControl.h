@@ -15,6 +15,7 @@
 #include "Spike.h"
 #include "constant.h"
 #include "ClassicMode.h"
+#include "HardMode.h"
 
 using namespace std;
 

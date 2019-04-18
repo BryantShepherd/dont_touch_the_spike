@@ -6,6 +6,7 @@ int MainControl::WIDTH;
 int MainControl::HEIGHT;
 
 ClassicMode* classic_mode = NULL;
+HardMode* hard_mode = NULL;
 
 MainControl::MainControl()
 {
@@ -64,6 +65,9 @@ void MainControl::initializeSDL(string window_title, const int&x, const int& y, 
 
     classic_mode = new ClassicMode;
     classic_mode->loadTexture(renderer);
+
+    hard_mode = new HardMode;
+    hard_mode->loadTexture(renderer);
 }
 
 void MainControl::setMode()
@@ -76,9 +80,12 @@ void MainControl::setMode()
 //        }
 //    case CLASSIC:
 //        {
-            classic_mode->handleEvent(event, status, end_loop);
-            classic_mode->update(status, score, isHittingWall, end_loop);
-            classic_mode->render(renderer, status, end_loop);
+//            classic_mode->handleEvent(event, status, end_loop);
+//            classic_mode->update(status, score, isHittingWall, end_loop);
+//            classic_mode->render(renderer, status, end_loop);
+            hard_mode->handleEvent(event, status, end_loop);
+            hard_mode->update(status, score, isHittingWall, end_loop);
+            hard_mode->render(renderer, status, end_loop);
 //            break;
 //        }
 //    case HARD:

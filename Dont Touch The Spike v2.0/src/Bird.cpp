@@ -80,8 +80,8 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
     if(x.at(0) > SCREEN_WIDTH-34)
     {
         x.at(0) = SCREEN_WIDTH-34;
-        dx = -1.75; //fix de chim dap tuong tu nhien hon
-        dy = -4.5;
+        dx *= -1; //fix de chim dap tuong tu nhien hon
+        dy *= 0.9;
         status = GO_RIGHT;
         isHittingWall = true;
         score++;
@@ -89,8 +89,8 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
     if(x.at(0) < 0)
     {
         x.at(0) = 0;
-        dx = 1.75;
-        dy = -4.5;
+        dx *= -1;
+        dy *= 0.9;
         status = GO_LEFT;
         isHittingWall = true;
         score++;
