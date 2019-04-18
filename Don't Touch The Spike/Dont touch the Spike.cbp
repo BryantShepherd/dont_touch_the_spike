@@ -54,11 +54,13 @@
 		<Unit filename="include/Bird.h" />
 		<Unit filename="include/MainControl.h" />
 		<Unit filename="include/Spike.h" />
+		<Unit filename="include/spikeHard.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Background.cpp" />
 		<Unit filename="src/Bird.cpp" />
 		<Unit filename="src/MainControl.cpp" />
 		<Unit filename="src/Spike.cpp" />
+		<Unit filename="src/spikeHard.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

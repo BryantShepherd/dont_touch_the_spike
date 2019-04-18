@@ -11,7 +11,7 @@
 #include "Bird.h"
 #include "Spike.h"
 #include "Background.h"
-#include "MainControl.h"
+//#include "spikeHard.h"
 
 using namespace std;
 
@@ -19,8 +19,8 @@ const int SCREEN_WIDTH = 400;
 const int SCREEN_HEIGHT = 600;
 const string WINDOW_TITLE = "Dont touch the spike!";
 
-const int RIGHT = 1;
-const int LEFT = 0;
+const int GOING_RIGHT = 0;
+const int GOING_LEFT = 1;
 
 class MainControl
 {

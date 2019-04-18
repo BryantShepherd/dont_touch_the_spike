@@ -10,9 +10,9 @@
 //#include <SDL_mixer.h>
 //#include <SDL_ttf.h>
 
-#include "Bird.h"
-#include "Background.h"
-#include "MainControl.h"
+//#include "Bird.h"
+//#include "Background.h"
+//#include "MainControl.h"
 
 using namespace std;
 
@@ -26,6 +26,7 @@ public:
     void free();
     void update(int status, bool hit, int &score);
     void render(int x, int y, int w, int h, SDL_Renderer* renderer, int status);
+    void moveSpikes(int i, float dist_x, float dist_y);
     float getX(int i);
     float getY(int i);
     int getWidth();
@@ -40,6 +41,16 @@ private:
     int width;
     int height;
     SDL_Texture* spike_texture;
+};
+
+const int SPIKE_MOVE_DISTANCE = 1;
+class SpikeHard : public Spike
+{
+private:
+    int switchDirectionCounter = 0;
+protected:
+public:
+    void hard_update();
 };
 
 #endif // SPIKE_H

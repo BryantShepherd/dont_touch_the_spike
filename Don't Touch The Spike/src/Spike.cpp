@@ -1,4 +1,5 @@
-#include "Spike.h"
+//#include "Spike.h"
+#include "MainControl.h"
 
 using namespace std;
 
@@ -76,6 +77,7 @@ void Spike::setSpikesNumber(int &score)
     else if(score <= 40) quality = 7;
     else quality = 8;
 }
+
 void Spike::render( int x, int y, int w, int h, SDL_Renderer* renderer, int status)
 {
     SDL_Rect renderQuad = { x, y, w, h };
@@ -112,6 +114,12 @@ void Spike::update(int status, bool hit, int &score)
             }
         }
     }
+}
+
+void Spike::moveSpikes(int i, float dist_x, float dist_y)
+{
+    x[i] += dist_x;
+    y[i] += dist_y;
 }
 
 float Spike::getX(int i)
