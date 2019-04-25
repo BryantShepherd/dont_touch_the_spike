@@ -17,7 +17,7 @@ class Texture
 public:
     void logSDLError(ostream& os, const string &msg, bool fatal);                               //hàm báo lỗi
     void free(SDL_Texture*);                                                                    //hàm giải phóng tài nguyên
-    SDL_Texture* loadFromFile(string path, SDL_Renderer*);                                      //hàm load file ảnh
+    void loadFromFile(string path, SDL_Renderer*);                                              //hàm load file ảnh
     void render(int, int, int, int, int, SDL_Renderer*, double, SDL_Point*, SDL_RendererFlip);  //hàm render (dùng đc trong mọi điều kiện)
     int getWidth(int i);
     int getHeight(int i);

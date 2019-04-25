@@ -28,6 +28,8 @@ public:
     int getSpikeNumber();
     void setSpikeNumber(int &score);
 
+    void reset();
+
 protected:
 //    vector <float> dx,dy;   //t khai báo sẵn vận tốc gai cho rồi đấy :D
     int spike_number;
@@ -35,13 +37,4 @@ private:
 
 };
 
-class HardSpike: public Spike
-{
-private:
-    int switchDirectionCounter = 0;
-protected:
-public:
-    void moveSpikes(int, float, float);
-    void hardUpdate();
-};
 #endif // SPIKE_H

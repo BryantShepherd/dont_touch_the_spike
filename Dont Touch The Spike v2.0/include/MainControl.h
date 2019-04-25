@@ -14,7 +14,9 @@
 #include "Button.h"
 #include "Spike.h"
 #include "constant.h"
+#include "MainMenu.h"
 #include "ClassicMode.h"
+#include "HardMode.h"
 
 using namespace std;
 
@@ -28,15 +30,17 @@ public:
 
     void setMode();
 
+    void reset();
+
     void close();
 
     SDL_Window* getWindow() const;
     SDL_Renderer* getRenderer() const;
 
     bool isEndLoop() const;
-    void setEndLoop(const bool&);
+//    void setEndLoop(const bool&);
 
-    int getScore();
+//    int getScore();
     static int getWidth();
     static int getHeight();
 
@@ -49,10 +53,13 @@ private:
     SDL_Renderer* renderer;
     SDL_Event event;
     bool end_loop;
-    bool isHittingWall;
-    int status;
-    int score;
+//    bool isHittingWall;
+//    int status;
+//    int score;
     int mode;
+//    MainMenu main_menu;
+//    ClassicMode classic_mode;
+//    HardMode hard_mode;
 };
 
 #endif // MAINCONTROL_H

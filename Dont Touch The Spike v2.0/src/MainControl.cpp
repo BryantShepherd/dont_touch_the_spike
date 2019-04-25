@@ -5,22 +5,26 @@ using namespace std;
 int MainControl::WIDTH;
 int MainControl::HEIGHT;
 
-ClassicMode* classic_mode = NULL;
-
 MainControl::MainControl()
 {
+//    main_menu = new MainMenu;
+//    hard_mode = new HardMode;
+//    classic_mode = new ClassicMode;
+
     window = NULL;
     renderer = NULL;
     end_loop = false;
-    isHittingWall = false;
-    status = 0;
-    score = -1;
+//    isHittingWall = false;
+//    status = 0;
+//    score = -1;
     mode  = 0;
 }
 
 MainControl::~MainControl()
 {
-
+//    delete main_menu;
+//    delete classic_mode;
+//    delete hard_mode;
 }
 
 void MainControl::logSDLError(ostream& os, const string &msg, bool fatal)
@@ -62,34 +66,98 @@ void MainControl::initializeSDL(string window_title, const int&x, const int& y, 
         logSDLError(cout, "IMG_Init", true);
     }
 
-    classic_mode = new ClassicMode;
-    classic_mode->loadTexture(renderer);
+//    main_menu.loadTexture(renderer);
+//
+//    classic_mode.loadTexture(renderer);
+//
+//    hard_mode.loadTexture(renderer);
 }
 
 void MainControl::setMode()
 {
-//    switch(mode)
-//    {
-//    case MENU:
-//        {
-//            break;
-//        }
-//    case CLASSIC:
-//        {
-            classic_mode->handleEvent(event, status, end_loop);
-            classic_mode->update(status, score, isHittingWall, end_loop);
-            classic_mode->render(renderer, status, end_loop);
-//            break;
-//        }
-//    case HARD:
-//        {
-//            break;
-//        }
-//    case DUEL:
-//        {
-//            break;
-//        }
-//    }
+    switch(mode)
+    {
+    case MENU:
+    {
+        MainMenu main_menu;
+        main_menu.loadTexture(renderer);
+//        bool end_loop = false;
+        while(!end_loop)
+        {
+            main_menu.handleEvent(event, end_loop, mode);
+            main_menu.update(end_loop, mode);
+            if(mode != 0)
+                break;
+            main_menu.render(renderer, end_loop);
+        }
+        break;
+    }
+    case CLASSIC:
+    {
+        ClassicMode classic_mode;
+        classic_mode.loadTexture(renderer);
+//        bool end_loop = false;
+        while(!end_loop)
+        {
+            classic_mode.handleEvent(event, end_loop, mode);
+            classic_mode.update(end_loop, mode);
+            if(mode != 1)
+            {
+                reset();
+                break;
+            }
+            classic_mode.render(renderer, end_loop);
+        }
+        break;
+    }
+    case HARD:
+    {
+        HardMode hard_mode;
+        hard_mode.loadTexture(renderer);
+//        bool end_loop = false;
+        while(!end_loop)
+        {
+            hard_mode.handleEvent(event, end_loop);
+            hard_mode.update(end_loop, mode);
+            if(mode != 2)
+            {
+                reset();
+                break;
+            }
+            hard_mode.render(renderer, end_loop);
+        }
+        break;
+    }
+    case DUEL:
+    {
+        break;
+    }
+    }
+}
+
+void MainControl::reset()
+{
+//    isHittingWall = false;
+//    status = 0;
+//    score = -1;
+    mode  = 0;
+
+//    delete main_menu;
+//    delete classic_mode;
+//    delete hard_mode;
+
+//    main_menu = NULL;
+//    classic_mode = NULL;
+//    hard_mode = NULL;
+
+//    main_menu = new MainMenu;
+//    main_menu.loadTexture(renderer);
+//
+//    classic_mode = new ClassicMode;
+//    classic_mode.loadTexture(renderer);
+//
+//    hard_mode = new HardMode;
+//    hard_mode.loadTexture(renderer);
 }
 
 void MainControl::close()
@@ -105,23 +173,23 @@ void MainControl::close()
 
 SDL_Window* MainControl::getWindow() const
 {
-    return this->window;
+    return window;
 }
 
 SDL_Renderer* MainControl::getRenderer()const
 {
-    return this->renderer;
+    return renderer;
 }
 
 bool MainControl::isEndLoop() const
 {
-    return this->end_loop;
+    return end_loop;
 }
 
-void MainControl::setEndLoop(const bool& end_loop)
-{
-    this->end_loop=end_loop;
-}
+//void MainControl::setEndLoop(const bool& end_loop)
+//{
+//    end_loop=end_loop;
+//}
 
 int MainControl::getWidth()
 {
@@ -133,7 +201,7 @@ int MainControl::getHeight()
     return HEIGHT;
 }
 
-int MainControl::getScore()
-{
-    return score;
-}
+//int MainControl::getScore()
+//{
+//    return score;
+//}

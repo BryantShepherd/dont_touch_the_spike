@@ -1448,3 +1448,1069 @@
 1555352784 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\texture.cpp
 	"Texture.h"
 
+1555573068 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	"Bird.h"
+	"Spike.h"
+	"Background.h"
+	"MainControl.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\begin_code.h
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\close_code.h
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573065 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573066 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555573068 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\bird.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1555573068 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\texture.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+
+1555573068 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\constant.h
+	<string>
+
+1555573068 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\spike.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1555573068 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\background.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1555575678 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\maincontrol.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Background.h"
+	"Button.h"
+	"Spike.h"
+	"constant.h"
+	"ClassicMode.h"
+	"HardMode.h"
+
+1555573068 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\button.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1555573068 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\classicmode.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Background.h"
+	"Button.h"
+	"Spike.h"
+	"constant.h"
+
+1555573068 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\background.cpp
+	"Background.h"
+
+1555575977 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\bird.cpp
+	"Bird.h"
+
+1555573068 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\button.cpp
+	"Button.h"
+
+1555573068 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\classicmode.cpp
+	"ClassicMode.h"
+
+1555575644 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\maincontrol.cpp
+	"MainControl.h"
+
+1555573068 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\spike.cpp
+	"Spike.h"
+	"time.h"
+	"random"
+
+1555573068 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\texture.cpp
+	"Texture.h"
+
+1555575811 source:d:\coding\dont_touch_the_spike\dont touch the spike v2.0\src\hardmode.cpp
+	"HardMode.h"
+
+1555575238 d:\coding\dont_touch_the_spike\dont touch the spike v2.0\include\hardmode.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Background.h"
+	"Button.h"
+	"Spike.h"
+	"constant.h"
+
+1556124184 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	"Bird.h"
+	"Spike.h"
+	"Background.h"
+	"MainControl.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\begin_code.h
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\close_code.h
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555576445 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\sdl\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556209560 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\bird.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1556124184 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\texture.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+
+1556124184 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\constant.h
+	<string>
+
+1556124184 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\spike.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1556124184 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\background.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1556201477 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\maincontrol.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Background.h"
+	"Button.h"
+	"Spike.h"
+	"constant.h"
+	"MainMenu.h"
+	"ClassicMode.h"
+	"HardMode.h"
+
+1556124184 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\button.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1556202261 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\classicmode.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Background.h"
+	"Button.h"
+	"Spike.h"
+	"constant.h"
+	"Score.h"
+
+1556212709 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\hardmode.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"HardBird.h"
+	"Background.h"
+	"Button.h"
+	"HardSpike.h"
+	"constant.h"
+	"Score.h"
+
+1556132831 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\background.cpp
+	"Background.h"
+
+1556209560 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\bird.cpp
+	"Bird.h"
+
+1556124184 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\button.cpp
+	"Button.h"
+
+1556210369 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\classicmode.cpp
+	"ClassicMode.h"
+
+1556213010 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\hardmode.cpp
+	"HardMode.h"
+
+1556201633 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\maincontrol.cpp
+	"MainControl.h"
+
+1556124184 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\spike.cpp
+	"Spike.h"
+	"time.h"
+	"random"
+
+1556210102 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\texture.cpp
+	"Texture.h"
+
+1556133303 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\mainmenu.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Background.h"
+	"Button.h"
+	"Spike.h"
+	"constant.h"
+
+1556212964 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\mainmenu.cpp
+	"MainMenu.h"
+
+1556124184 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\hardbird.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+	"Bird.h"
+
+1556124184 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\hardspike.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+	"Spike.h"
+
+1556124184 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\hardbird.cpp
+	"HardBird.h"
+
+1556124184 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\hardspike.cpp
+	"HardSpike.h"
+
+1556210423 source:d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\src\score.cpp
+	"Score.h"
+
+1556208162 d:\c++\project\dont_touch_the_spike\dont touch the spike v2.0\include\score.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
