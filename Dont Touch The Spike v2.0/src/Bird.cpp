@@ -8,8 +8,8 @@ Bird::Bird()
     y.push_back(SCREEN_HEIGHT/2.0);
     dx = 0;
     dy = 0;
-    change_in_dx = 0.05;
-    change_in_dy = 0.3;
+    ddx = 0.05;
+    ddy = 0.3;
     change_press_dx = 2;
     change_press_dy = -7.5;
     //fix loi dap tuong
@@ -24,8 +24,8 @@ Bird::~Bird()
     width.clear();
     height.clear();
     texture.clear();
-    change_in_dx = 0;
-    change_in_dy = 0;
+    ddx = 0;
+    ddy = 0;
     change_press_dx = 0;
     change_press_dy = 0;
 }
@@ -46,6 +46,7 @@ void Bird::handleEvent(SDL_Event event, int &status)
     {
         if(event.key.keysym.sym == SDLK_SPACE)
         {
+            //Run flapping sound
             if(status == GO_LEFT)
             {
                 dx = change_press_dx; //change in velocity when press SPACE
@@ -67,13 +68,13 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
     isHittingWall = false;
     if(status == GO_LEFT)
     {
-        dx += change_in_dx; //cho de dieu chinh van toc cua cac con chim khac nhau
-        dy += change_in_dy;
+        dx += ddx; //cho de dieu chinh van toc cua cac con chim khac nhau
+        dy += ddy;
     }
     else if(status == GO_RIGHT)
     {
-        dx -= change_in_dx;
-        dy += change_in_dy;
+        dx -= ddx;
+        dy += ddy;
     }
     x.at(0) += dx;
     y.at(0) += dy;
@@ -124,8 +125,8 @@ HardBird::HardBird()
     y.push_back(SCREEN_HEIGHT/2.0);
     dx = 0;
     dy = 0;
-    change_in_dx = 0.1;
-    change_in_dy = 0.3;
+    ddx = 0.1;
+    ddy = 0.3;
     change_press_dx = 4;
     change_press_dy = -7.5;
 }

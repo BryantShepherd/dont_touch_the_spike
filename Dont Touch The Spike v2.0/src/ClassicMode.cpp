@@ -41,7 +41,7 @@ void ClassicMode::handleEvent(SDL_Event event, int &status, bool& end_loop)
     {
         if(event.key.keysym.sym==SDLK_ESCAPE)
         {
-            end_loop = true;
+            end_loop = true; //chua duoc
         }
         break;
     }
@@ -67,6 +67,7 @@ void ClassicMode::update(int &status, int &score, bool &isHittingWall, bool &end
             {
 //                mode = 0;
                 end_loop = true;
+                //Death sound
                 cout << score << endl;
             }
         }
@@ -79,6 +80,7 @@ void ClassicMode::update(int &status, int &score, bool &isHittingWall, bool &end
             {
 //                mode = 0;
                 end_loop = true;
+                //Death sound
                 cout << score<< endl;
             }
         }
@@ -88,6 +90,7 @@ void ClassicMode::update(int &status, int &score, bool &isHittingWall, bool &end
     {
 //        mode  = 0;
         end_loop = true;
+        //Death sound
         cout << score << endl;
     }
 }

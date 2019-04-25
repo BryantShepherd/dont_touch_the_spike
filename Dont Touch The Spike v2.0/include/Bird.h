@@ -29,7 +29,7 @@ public:
 protected:
     float dx, dy;
     //to change bird properties more easily
-    float change_in_dx, change_in_dy; //gravity
+    float ddx, ddy; //gravity
     float change_press_dx, change_press_dy; //change of velocity when press SPACE
 
 private:
