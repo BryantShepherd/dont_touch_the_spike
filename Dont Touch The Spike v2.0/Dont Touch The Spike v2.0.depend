@@ -1385,7 +1385,7 @@
 	"Texture.h"
 	"constant.h"
 
-1555349002 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\include\maincontrol.h
+1555602382 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\include\maincontrol.h
 	<iostream>
 	<string>
 	<vector>
@@ -1399,6 +1399,7 @@
 	"Spike.h"
 	"constant.h"
 	"ClassicMode.h"
+	"HardMode.h"
 
 1555344560 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\include\button.h
 	<iostream>
@@ -1428,7 +1429,7 @@
 1555352538 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\background.cpp
 	"Background.h"
 
-1555515019 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\bird.cpp
+1555602382 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\bird.cpp
 	"Bird.h"
 
 1555344560 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\button.cpp
@@ -1437,10 +1438,10 @@
 1555352320 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\classicmode.cpp
 	"ClassicMode.h"
 
-1555353258 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\maincontrol.cpp
+1555602382 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\maincontrol.cpp
 	"MainControl.h"
 
-1555515603 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\spike.cpp
+1555602549 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\spike.cpp
 	"Spike.h"
 	"time.h"
 	"random"
@@ -1948,4 +1949,21 @@
 	"Button.h"
 	"Spike.h"
 	"constant.h"
+
+1555602382 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\include\hardmode.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Background.h"
+	"Button.h"
+	"Spike.h"
+	"constant.h"
+
+1555602382 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v2.0\src\hardmode.cpp
+	"HardMode.h"
 

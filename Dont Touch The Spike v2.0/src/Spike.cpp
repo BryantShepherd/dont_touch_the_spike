@@ -85,10 +85,10 @@ void HardSpike::hardUpdate()
     {
         switchDirectionCounter++;
 //        cout << switchDirectionCounter << " ";
-        if (switchDirectionCounter > 15*getSpikeNumber())
+        if (switchDirectionCounter > 30*getSpikeNumber())
         {
             moveSpikes(i, 0, -2);
-            if(switchDirectionCounter == 30*getSpikeNumber()) switchDirectionCounter = 0;
+            if(switchDirectionCounter == 60*getSpikeNumber()) switchDirectionCounter = 0;
         }
         else
         {
