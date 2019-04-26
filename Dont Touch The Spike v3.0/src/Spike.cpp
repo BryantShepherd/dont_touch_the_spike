@@ -41,7 +41,7 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
         {
             for(int i = 0; i < spike_number; i++)
             {
-                x.push_back(SCREEN_WIDTH - width.at(0));
+                x.push_back(SCREEN_WIDTH - width.at(0)); //width.at(0) la chieu rong cua spike
                 y.push_back((0 + rand() % (60 + 1 - 0))*height.at(0));
             }
         }

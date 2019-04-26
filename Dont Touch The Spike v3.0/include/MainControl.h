@@ -9,6 +9,7 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 
+#include "Item.h"
 #include "Bird.h"
 #include "Background.h"
 #include "Button.h"
@@ -17,6 +18,7 @@
 #include "MainMenu.h"
 #include "ClassicMode.h"
 #include "HardMode.h"
+
 
 using namespace std;
 
