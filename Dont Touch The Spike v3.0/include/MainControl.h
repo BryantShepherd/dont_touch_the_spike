@@ -49,8 +49,6 @@ public:
 protected:
     static int WIDTH;
     static int HEIGHT;
-
-private:
     SDL_Window* window;
     SDL_Renderer* renderer;
     SDL_Event event;

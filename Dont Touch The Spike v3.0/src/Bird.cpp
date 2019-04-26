@@ -75,7 +75,7 @@ void Bird::handleEvent(SDL_Event event, int &status)
 
 void Bird::update(int &status, int &score, bool &isHittingWall)
 {
-    isHittingWall = false;
+    isHittingWall = true; //need to be TRUE to use generate item the first time, see more in item.cpp/update
     if(status == GO_LEFT)
     {
         dx += ddx; //cho de dieu chinh van toc cua cac con chim khac nhau
@@ -97,7 +97,7 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         isHittingWall = true;
         score++;
     }
-    if(x.at(0) < 0)
+    else if(x.at(0) < 0)
     {
         x.at(0) = 0;
         dx *= -1;
@@ -105,6 +105,10 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         status = GO_LEFT;
         isHittingWall = true;
         score++;
+    }
+    else
+    {
+        isHittingWall = false;
     }
     if(y.at(0) > SCREEN_HEIGHT-24)
     {

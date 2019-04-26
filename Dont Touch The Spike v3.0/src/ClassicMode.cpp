@@ -92,9 +92,10 @@ void ClassicMode::handleEvent(SDL_Event event, int &status, bool& end_loop, int 
 
 void ClassicMode::update(int &status, int &score, bool &isHittingWall, bool &end_loop, int &mode)
 {
+    /*Update member*/
     bird.update(status, score, isHittingWall);
     spike.update(status, score, isHittingWall);
-    item.update(status, score, isHittingWall);
+    item.update(status, isHittingWall);
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
         if(status == GO_LEFT)
@@ -120,8 +121,11 @@ void ClassicMode::update(int &status, int &score, bool &isHittingWall, bool &end
             }
         }
     }
+    item.itemAnimation();
+    item.checkIfEaten(bird);
 
-    if(bird.getY(0) == 0 || bird.getY(0) == SCREEN_HEIGHT-24)
+
+    if(bird.getY(0) == 0 || bird.getY(0) == SCREEN_HEIGHT-24) /*Bird touch top/bottom spikes*/
     {
         status = DEATH;
         cout << score << endl;
@@ -147,7 +151,7 @@ void ClassicMode::render(SDL_Renderer* renderer, int status, bool end_loop)
             background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
 
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
-            item.render(0, item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
+            if(!item.getItemState()) item.render(0, item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
 
             for (int i = 0; i< (spike.getSpikeNumber()); i++)
             {
@@ -158,7 +162,7 @@ void ClassicMode::render(SDL_Renderer* renderer, int status, bool end_loop)
         {
             background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);
-            item.render(0, item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
+            if (!item.getItemState()) item.render(0, item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
             for (int i = 0; i< spike.getSpikeNumber(); i++)
             {
                 spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);

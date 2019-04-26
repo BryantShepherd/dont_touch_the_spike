@@ -3075,7 +3075,7 @@
 1556237166 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\dont touch the spike v3.0\src\item.cpp
 	"Item.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\main.cpp
+1556250431 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\main.cpp
 	<iostream>
 	<string>
 	<vector>
@@ -3088,7 +3088,7 @@
 	"Background.h"
 	"MainControl.h"
 
-1556244567 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -3121,12 +3121,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_main.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_stdinc.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -3155,34 +3155,34 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_config.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_config.h
 	"SDL_platform.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_platform.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\begin_code.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\begin_code.h
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\close_code.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\close_code.h
 
-1556244567 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_assert.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1556244567 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_atomic.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
 	<mbarrier.h>
 	"close_code.h"
 
-1556244567 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_audio.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -3192,24 +3192,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_error.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_endian.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_mutex.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_thread.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -3220,18 +3220,18 @@
 	<stdlib.h>
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_rwops.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_clipboard.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_cpuinfo.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -3246,7 +3246,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_events.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -3260,7 +3260,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_video.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -3268,13 +3268,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_pixels.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"SDL_endian.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_rect.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -3282,7 +3282,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_surface.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -3291,11 +3291,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244567 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_blendmode.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_keyboard.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -3303,27 +3303,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_keycode.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_scancode.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_mouse.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_joystick.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_gamecontroller.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -3331,11 +3331,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_quit.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_gesture.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -3343,66 +3343,66 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_touch.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_filesystem.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_haptic.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_hints.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_loadso.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_log.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_messagebox.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_power.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_render.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_sensor.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_sensor.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_shape.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_shape.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -3411,7 +3411,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_system.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -3419,24 +3419,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_timer.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_version.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_image.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_mixer.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_mixer.h
 	"SDL_stdinc.h"
 	"SDL_rwops.h"
 	"SDL_audio.h"
@@ -3445,12 +3445,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556244568 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_ttf.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\sdl\include\sdl2\sdl_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\bird.h
+1556250473 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\bird.h
 	<iostream>
 	<string>
 	<vector>
@@ -3461,7 +3461,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\texture.h
+1556250473 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\texture.h
 	<iostream>
 	<string>
 	<vector>
@@ -3470,21 +3470,10 @@
 	<SDL_ttf.h>
 	<SDL_mixer.h>
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\constant.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\constant.h
 	<string>
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\spike.h
-	<iostream>
-	<string>
-	<vector>
-	<SDL.h>
-	<SDL_image.h>
-	<SDL_ttf.h>
-	<SDL_mixer.h>
-	"Texture.h"
-	"constant.h"
-
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\background.h
+1556250473 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\spike.h
 	<iostream>
 	<string>
 	<vector>
@@ -3495,7 +3484,18 @@
 	"Texture.h"
 	"constant.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\maincontrol.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\background.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1556253241 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\maincontrol.h
 	<iostream>
 	<string>
 	<vector>
@@ -3513,7 +3513,7 @@
 	"ClassicMode.h"
 	"HardMode.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\item.h
+1556257731 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\item.h
 	<iostream>
 	<string>
 	<vector>
@@ -3527,7 +3527,7 @@
 	"time.h"
 	"random"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\button.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\button.h
 	<iostream>
 	<string>
 	<vector>
@@ -3538,7 +3538,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\mainmenu.h
+1556250473 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\mainmenu.h
 	<iostream>
 	<string>
 	<vector>
@@ -3552,7 +3552,7 @@
 	"Spike.h"
 	"constant.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\classicmode.h
+1556250473 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\classicmode.h
 	<iostream>
 	<string>
 	<vector>
@@ -3562,7 +3562,7 @@
 	<SDL_mixer.h>
 	"MainControl.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\hardmode.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\hardmode.h
 	<iostream>
 	<string>
 	<vector>
@@ -3576,7 +3576,7 @@
 	"HardSpike.h"
 	"constant.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\hardbird.h
+1556250431 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\hardbird.h
 	<iostream>
 	<string>
 	<vector>
@@ -3588,7 +3588,7 @@
 	"constant.h"
 	"Bird.h"
 
-1556244570 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\hardspike.h
+1556250473 d:\coding\dont_touch_the_spike\dont touch the spike v3.0\include\hardspike.h
 	<iostream>
 	<string>
 	<vector>
@@ -3600,41 +3600,41 @@
 	"constant.h"
 	"Spike.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\background.cpp
+1556250432 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\background.cpp
 	"Background.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\bird.cpp
+1556256922 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\bird.cpp
 	"Bird.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\button.cpp
+1556250432 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\button.cpp
 	"Button.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\classicmode.cpp
+1556257809 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\classicmode.cpp
 	"ClassicMode.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\hardbird.cpp
+1556250432 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\hardbird.cpp
 	"HardBird.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\hardmode.cpp
+1556250473 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\hardmode.cpp
 	"HardMode.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\hardspike.cpp
+1556250432 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\hardspike.cpp
 	"HardSpike.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\item.cpp
+1556258399 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\item.cpp
 	"Item.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\maincontrol.cpp
+1556250432 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\maincontrol.cpp
 	"MainControl.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\mainmenu.cpp
+1556250473 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\mainmenu.cpp
 	"MainMenu.h"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\spike.cpp
+1556250473 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\spike.cpp
 	"Spike.h"
 	"time.h"
 	"random"
 
-1556244570 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\texture.cpp
+1556250473 source:d:\coding\dont_touch_the_spike\dont touch the spike v3.0\src\texture.cpp
 	"Texture.h"
 

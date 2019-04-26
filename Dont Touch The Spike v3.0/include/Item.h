@@ -15,16 +15,22 @@
 #include "time.h"
 #include "random"
 
+
 class Item: public Texture
 {
 protected:
-
+    int item_type; //candy, energy drink, shield, ...
+    bool hasBeenEaten = false;
+    int k; //animation counter
 public:
     Item();
     ~Item();
     void loadTexture(SDL_Renderer* renderer);
-    void update(int &status, int& score, bool& hasBeenEaten);
-    void checkIfEaten(Bird& bird);
+    void update(int &status, bool&);
+    void checkIfEaten(Bird& bird); //check if item is eaten
+    void itemAnimation(); //item move up and down
+    bool getItemState(); //return hasBeenEaten
+    void activateEffect(); //for each type of item, activate effect accordingly
 };
 
 #endif // ITEM_H_INCLUDED
