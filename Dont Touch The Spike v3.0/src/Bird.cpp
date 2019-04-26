@@ -8,8 +8,8 @@ Bird::Bird()
     y.push_back(SCREEN_HEIGHT/2.0);
     dx = 0;
     dy = 0;
-    change_in_dx = 0.05;
-    change_in_dy = 0.3;
+    ddx = 0.05;
+    ddy = 0.3;
     change_press_dx = 2;
     change_press_dy = -7.5;
     //fix loi dap tuong
@@ -78,13 +78,13 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
     isHittingWall = false;
     if(status == GO_LEFT)
     {
-        dx += change_in_dx; //cho de dieu chinh van toc cua cac con chim khac nhau
-        dy += change_in_dy;
+        dx += ddx; //cho de dieu chinh van toc cua cac con chim khac nhau
+        dy += ddy;
     }
     else if(status == GO_RIGHT)
     {
-        dx -= change_in_dx;
-        dy += change_in_dy;
+        dx -= ddx;
+        dy += ddy;
     }
     x.at(0) += dx;
     y.at(0) += dy;
@@ -124,8 +124,8 @@ void Bird::pause()
     y.at(0) = 0;
     dx = 0;
     dy = 0;
-    change_in_dx = 0;
-    change_in_dy = 0;
+    ddx = 0;
+    ddy = 0;
     change_press_dx = 0;
     change_press_dy = 0;
 

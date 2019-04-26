@@ -78,7 +78,7 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
     }
     x.at(0) += dx;
     y.at(0) += dy;
-    if(x.at(0) > SCREEN_WIDTH-34)
+    if(x.at(0 ) > SCREEN_WIDTH-34) //hit left wall
     {
         x.at(0) = SCREEN_WIDTH-34;
         dx *= -1; //fix de chim dap tuong tu nhien hon

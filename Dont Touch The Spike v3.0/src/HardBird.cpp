@@ -8,8 +8,8 @@ HardBird::HardBird()
     y.push_back(SCREEN_HEIGHT/2.0);
     dx = 0;
     dy = 0;
-    change_in_dx = 0.1;
-    change_in_dy = 0.3;
+    ddx = 0.1;
+    ddy = 0.3;
     change_press_dx = 4;
     change_press_dy = -7.5;
 }
