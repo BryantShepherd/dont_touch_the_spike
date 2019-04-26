@@ -15,16 +15,9 @@ Background::~Background()
     width.clear();
     height.clear();
     texture.clear();
-
-    x.shrink_to_fit();
-    y.shrink_to_fit();
-    width.shrink_to_fit();
-    height.shrink_to_fit();
-    texture.shrink_to_fit();
 }
 
 void Background::loadTexture(SDL_Renderer* renderer)
 {
-    loadFromFile("assets/sprites/background-day.png", renderer);
-    loadFromFile("assets/sprites/gameover.png", renderer);
+    texture.push_back(loadFromFile("assets/sprites/background-day.png", renderer));
 }

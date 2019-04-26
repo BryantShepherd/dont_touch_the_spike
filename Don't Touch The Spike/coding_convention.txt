@@ -1,0 +1,4 @@
+const THIS_IS_A_CONSTANT
+var this_is_a_variable
+function thisIsAFunction
+class/struct ThisIsAClass

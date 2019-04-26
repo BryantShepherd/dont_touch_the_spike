@@ -22,7 +22,7 @@ void Texture::free(SDL_Texture* texture)
     }
 }
 
-void Texture::loadFromFile(string path, SDL_Renderer* renderer)
+SDL_Texture* Texture::loadFromFile(string path, SDL_Renderer* renderer)
 {
     SDL_Texture* new_texture = NULL;
     SDL_Surface* loaded_surface = IMG_Load( path.c_str() );
@@ -33,7 +33,7 @@ void Texture::loadFromFile(string path, SDL_Renderer* renderer)
     }
     else
     {
-        SDL_SetColorKey( loaded_surface, SDL_TRUE, SDL_MapRGB( loaded_surface->format, 0x00, 0xFF, 0xFF ) );
+        SDL_SetColorKey( loaded_surface, SDL_TRUE, SDL_MapRGB( loaded_surface->format, 0xFF, 0xFF, 0xFF ) );
         new_texture = SDL_CreateTextureFromSurface(renderer, loaded_surface);
         if( new_texture == NULL )
         {
@@ -48,7 +48,7 @@ void Texture::loadFromFile(string path, SDL_Renderer* renderer)
         SDL_FreeSurface(loaded_surface);
     }
 
-     texture.push_back(new_texture);
+    return new_texture;
 }
 
 void Texture::render(int i, int x, int y, int width, int height, SDL_Renderer* renderer, double angle, SDL_Point* center, SDL_RendererFlip flip)

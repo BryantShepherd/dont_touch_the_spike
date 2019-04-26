@@ -23,10 +23,8 @@ public:
     void handleEvent(SDL_Event event, int &status);                 //hàm nhận tín hiệu bàn phím cửa chim
     void update(int &status, int &score, bool &isHittingWall);      //hàm update vị trí con chim
 
-    void pause();
     float getDx();
     float getDy();
-
 
 protected:
     float dx, dy;
@@ -38,4 +36,9 @@ private:
 
 };
 
+class HardBird: public Bird
+{
+public:
+    HardBird();
+};
 #endif // BIRD_H

@@ -1,25 +1,6 @@
-#ifndef HARDBIRD_H
-#define HARDBIRD_H
+#ifndef HARDBIRD_H_INCLUDED
+#define HARDBIRD_H_INCLUDED
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
-#include <SDL_mixer.h>
+//Inside Bird.h, don't know how to inherit class in another file
 
-#include "Texture.h"
-#include "constant.h"
-#include "Bird.h"
-
-using namespace std;
-
-class HardBird: public Bird
-{
-public:
-    HardBird();
-    ~HardBird();
-};
-
-#endif // HARDBIRD_H
+#endif // HARDBIRD_H_INCLUDED
