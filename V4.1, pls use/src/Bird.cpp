@@ -12,7 +12,7 @@ Bird::Bird()
     change_in_dy = 0.3;
     change_press_dx = 2;
     change_press_dy = -7.5;
-    isKeyPressed = false;
+    is_key_pressed = false;
     //fix loi dap tuong
 }
 
@@ -56,7 +56,7 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
                 dx = (-1)*change_press_dx;
                 dy = change_press_dy;
             }
-            isKeyPressed = true;
+            is_key_pressed = true;
         }
         break;
     }
@@ -72,7 +72,7 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
             dx = (-1)*change_press_dx;
             dy = change_press_dy;
         }
-        isKeyPressed = true;
+        is_key_pressed = true;
         break;
     }
     }
@@ -127,15 +127,14 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
 
 void Bird::playSound(vector <Mix_Chunk*> sound, bool & isHittingWall)
 {
-    if(isKeyPressed == true)
+    if(is_key_pressed == true)
     {
         Mix_PlayChannel( -1, sound.at(0), 0 );
-            isKeyPressed = false;
+        is_key_pressed = false;
     }
     if(isHittingWall == true)
     {
         Mix_PlayChannel(-1, sound.at(1), 0);
-
     }
 }
 

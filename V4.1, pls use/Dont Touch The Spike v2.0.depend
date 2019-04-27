@@ -4583,7 +4583,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556344127 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\bird.h
+1556385064 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\bird.h
 	<iostream>
 	<string>
 	<vector>
@@ -4713,7 +4713,7 @@
 1556343246 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\background.cpp
 	"Background.h"
 
-1556349510 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
+1556387577 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
 	"Bird.h"
 
 1556343246 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\button.cpp

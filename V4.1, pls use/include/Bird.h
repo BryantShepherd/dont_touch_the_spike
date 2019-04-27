@@ -33,7 +33,7 @@ protected:
     //to change bird properties more easily
     float change_in_dx, change_in_dy; //gravity
     float change_press_dx, change_press_dy; //change of velocity when press SPACE
-    bool isKeyPressed;
+    bool is_key_pressed;
 
 private:
 
