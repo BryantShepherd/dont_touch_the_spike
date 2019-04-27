@@ -20,9 +20,9 @@ MainMenu::~MainMenu()
     button.shrink_to_fit();
 }
 
-void MainMenu::loadTexture(SDL_Renderer* renderer)
+void MainMenu::loadMedia(SDL_Renderer* renderer)
 {
-    background.loadTexture(renderer);
+    background.loadMedia(renderer);
 
     button.push_back(Button());
     button.at(0).loadFromFile("assets/sprites/message.png", renderer);

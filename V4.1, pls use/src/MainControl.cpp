@@ -66,11 +66,16 @@ void MainControl::initializeSDL(string window_title, const int&x, const int& y, 
         logSDLError(cout, "IMG_Init", true);
     }
 
-//    main_menu.loadTexture(renderer);
+    if( Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 ) < 0 )
+    {
+        logSDLError(cout, "Mix_OpenAudio", true);
+    }
+
+//    main_menu.loadMedia(renderer);
 //
-//    classic_mode.loadTexture(renderer);
+//    classic_mode.loadMedia(renderer);
 //
-//    hard_mode.loadTexture(renderer);
+//    hard_mode.loadMedia(renderer);
 }
 
 void MainControl::setMode()
@@ -80,8 +85,7 @@ void MainControl::setMode()
     case MENU:
     {
         MainMenu main_menu;
-        main_menu.loadTexture(renderer);
-//        bool end_loop = false;
+        main_menu.loadMedia(renderer);
         while(!end_loop)
         {
             main_menu.handleEvent(event, end_loop, mode);
@@ -95,12 +99,12 @@ void MainControl::setMode()
     case CLASSIC:
     {
         ClassicMode classic_mode;
-        classic_mode.loadTexture(renderer);
-//        bool end_loop = false;
+        classic_mode.loadMedia(renderer);
         while(!end_loop)
         {
             classic_mode.handleEvent(event, end_loop, mode);
             classic_mode.update(end_loop, mode);
+            classic_mode.playSound();
             if(mode != 1)
             {
                 reset();
@@ -113,12 +117,12 @@ void MainControl::setMode()
     case HARD:
     {
         HardMode hard_mode;
-        hard_mode.loadTexture(renderer);
-//        bool end_loop = false;
+        hard_mode.loadMedia(renderer);
         while(!end_loop)
         {
             hard_mode.handleEvent(event, end_loop, mode);
             hard_mode.update(end_loop, mode);
+            hard_mode.playSound();
             if(mode != 2)
             {
                 reset();
@@ -151,13 +155,13 @@ void MainControl::reset()
 //    hard_mode = NULL;
 
 //    main_menu = new MainMenu;
-//    main_menu.loadTexture(renderer);
+//    main_menu.loadMedia(renderer);
 //
 //    classic_mode = new ClassicMode;
-//    classic_mode.loadTexture(renderer);
+//    classic_mode.loadMedia(renderer);
 //
 //    hard_mode = new HardMode;
-//    hard_mode.loadTexture(renderer);
+//    hard_mode.loadMedia(renderer);
 }
 
 void MainControl::close()

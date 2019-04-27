@@ -24,7 +24,7 @@ Spike::~Spike()
     texture.shrink_to_fit();
 }
 
-void Spike::loadTexture(SDL_Renderer* renderer)
+void Spike::loadMedia(SDL_Renderer* renderer)
 {
     loadFromFile("assets/sprites/spike.png", renderer);
 }

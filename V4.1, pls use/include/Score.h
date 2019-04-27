@@ -19,7 +19,7 @@ class Score: public Texture
 public:
     Score();
     ~Score();
-    void loadTexture(SDL_Renderer* renderer);
+    void loadMedia(SDL_Renderer* renderer);
     void renderScore(SDL_Renderer* renderer, int score);
 
 protected:

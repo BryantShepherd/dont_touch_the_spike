@@ -12,6 +12,7 @@ Bird::Bird()
     change_in_dy = 0.3;
     change_press_dx = 2;
     change_press_dy = -7.5;
+    isKeyPressed = false;
     //fix loi dap tuong
 }
 
@@ -30,20 +31,20 @@ Bird::~Bird()
     texture.shrink_to_fit();
 }
 
-void Bird::loadTexture(SDL_Renderer* renderer)
+void Bird::loadMedia(SDL_Renderer* renderer)
 {
     loadFromFile("assets/sprites/yellowbird-downflap.png", renderer);
     loadFromFile("assets/sprites/yellowbird-midflap.png", renderer);
     loadFromFile("assets/sprites/yellowbird-upflap.png", renderer);
 }
 
-void Bird::handleEvent(SDL_Event event, int &status)
+void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
 {
     switch(event.type)
     {
     case SDL_KEYDOWN:
     {
-        if(event.key.keysym.sym == SDLK_SPACE)
+        if(event.key.keysym.sym == SDLK_SPACE && event.key.repeat == 0)
         {
             if(status == GO_LEFT)
             {
@@ -55,10 +56,12 @@ void Bird::handleEvent(SDL_Event event, int &status)
                 dx = (-1)*change_press_dx;
                 dy = change_press_dy;
             }
+            isKeyPressed = true;
         }
         break;
     }
     case SDL_MOUSEBUTTONDOWN:
+    {
         if(status == GO_LEFT)
         {
             dx = change_press_dx; //change in velocity when press SPACE
@@ -69,7 +72,9 @@ void Bird::handleEvent(SDL_Event event, int &status)
             dx = (-1)*change_press_dx;
             dy = change_press_dy;
         }
+        isKeyPressed = true;
         break;
+    }
     }
 }
 
@@ -96,6 +101,7 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         status = GO_RIGHT;
         isHittingWall = true;
         score++;
+
     }
     if(x.at(0) < 0)
     {
@@ -118,6 +124,21 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
     }
 
 }
+
+void Bird::playSound(vector <Mix_Chunk*> sound, bool & isHittingWall)
+{
+    if(isKeyPressed == true)
+    {
+        Mix_PlayChannel( -1, sound.at(0), 0 );
+            isKeyPressed = false;
+    }
+    if(isHittingWall == true)
+    {
+        Mix_PlayChannel(-1, sound.at(1), 0);
+
+    }
+}
+
 void Bird::pause()
 {
     x.at(0) = 0;

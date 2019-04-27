@@ -23,7 +23,7 @@ Background::~Background()
     texture.shrink_to_fit();
 }
 
-void Background::loadTexture(SDL_Renderer* renderer)
+void Background::loadMedia(SDL_Renderer* renderer)
 {
     loadFromFile("assets/sprites/background-day.png", renderer);
     loadFromFile("assets/sprites/gameover.png", renderer);

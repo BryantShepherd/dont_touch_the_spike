@@ -49,6 +49,7 @@ void Texture::loadFromFile(string path, SDL_Renderer* renderer)
     }
 
      texture.push_back(new_texture);
+     new_texture = NULL;
 }
 
 void Texture::render(int i, int x, int y, int width, int height, SDL_Renderer* renderer, double angle, SDL_Point* center, SDL_RendererFlip flip)

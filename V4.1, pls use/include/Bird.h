@@ -19,10 +19,10 @@ class Bird: public Texture
 public:
     Bird();
     ~Bird();
-    void loadTexture(SDL_Renderer* renderer);                       //hàm load tất cả các texture của đối tượng
-    void handleEvent(SDL_Event event, int &status);                 //hàm nhận tín hiệu bàn phím cửa chim
-    void update(int &status, int &score, bool &isHittingWall);      //hàm update vị trí con chim
-
+    void loadMedia(SDL_Renderer* renderer);                                     //hàm load tất cả các texture của đối tượng
+    void handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*>);         //hàm nhận tín hiệu bàn phím cửa chim
+    void update(int &status, int &score, bool &isHittingWall);                  //hàm update vị trí con chim
+    void playSound(vector<Mix_Chunk*>, bool &);
     void pause();
     float getDx();
     float getDy();
@@ -33,6 +33,7 @@ protected:
     //to change bird properties more easily
     float change_in_dx, change_in_dy; //gravity
     float change_press_dx, change_press_dy; //change of velocity when press SPACE
+    bool isKeyPressed;
 
 private:
 

@@ -23,7 +23,7 @@ Button::~Button()
     texture.shrink_to_fit();
 }
 
-void Button::loadTexture(SDL_Renderer* renderer)
+void Button::loadMedia(SDL_Renderer* renderer)
 {
 
 }

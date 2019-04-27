@@ -20,14 +20,14 @@ public:
     Spike();
     ~Spike();
 
-    void loadTexture(SDL_Renderer* renderer);
+    void loadMedia(SDL_Renderer* renderer);
     void update(int &status, int &score, bool &isHittingWall);
 
     float getDx(int i);
     float getDy(int i);
     int getSpikeNumber();
     void setSpikeNumber(int &score);
-    void moveSpike();
+    void moveSpike();                   //hard mode
 
     void reset();
 

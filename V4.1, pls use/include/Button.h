@@ -19,7 +19,7 @@ class Button: public Texture
 public:
     Button();
     ~Button();
-    void loadTexture(SDL_Renderer* renderer);       //hàm load tất cả texture cửa đối tượng
+    void loadMedia(SDL_Renderer* renderer);       //hàm load tất cả texture cửa đối tượng
     void setPosition(int x, int y);
     void handleEvent(SDL_Event event);
     bool isHittingButton();

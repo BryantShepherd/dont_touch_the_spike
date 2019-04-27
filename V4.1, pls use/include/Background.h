@@ -19,7 +19,7 @@ class Background: public Texture
 public:
     Background();
     ~Background();
-    void loadTexture(SDL_Renderer* renderer);       //hàm load toàn bộ texture của đối tượng
+    void loadMedia(SDL_Renderer* renderer);       //hàm load toàn bộ texture của đối tượng
 
 protected:
 

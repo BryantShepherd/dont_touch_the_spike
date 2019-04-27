@@ -58,6 +58,7 @@ void HardMode::update(bool &end_loop, int &mode)
     if(status == DEATH)
     {
         bird.pause();
+        Mix_PlayChannel(-1, sound.at(2), 0);
     }
 }
 

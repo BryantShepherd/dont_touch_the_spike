@@ -23,9 +23,10 @@ class ClassicMode
 public:
     ClassicMode();
     ~ClassicMode();
-    void loadTexture(SDL_Renderer* renderer);
+    void loadMedia(SDL_Renderer* renderer);
     void handleEvent(SDL_Event event, bool &end_loop, int &mode);
     void update(bool &end_loop, int& mode);
+    void playSound();
     void render(SDL_Renderer* renderer, bool end_loop);
 
 protected:
@@ -33,6 +34,8 @@ protected:
     Bird bird;
     Spike spike;
     Score s_score;
+
+    vector<Mix_Chunk*> sound;
     int score;
     int frame;
     bool isHittingWall;

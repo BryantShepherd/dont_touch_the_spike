@@ -22,7 +22,7 @@ class MainMenu
 public:
     MainMenu();
     ~MainMenu();
-    void loadTexture(SDL_Renderer* renderer);
+    void loadMedia(SDL_Renderer* renderer);
     void handleEvent(SDL_Event event, bool &end_loop, int &mode);
     void update(bool &end_loop, int &mode);
     void render(SDL_Renderer* renderer, bool end_loop);
