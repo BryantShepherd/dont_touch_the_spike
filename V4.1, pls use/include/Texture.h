@@ -32,4 +32,6 @@ private:
 
 };
 
+bool checkCollision(vector <SDL_Rect> &a, vector <SDL_Rect> &b);
+
 #endif // TEXTURE_H

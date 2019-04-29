@@ -23,8 +23,8 @@ Item::~Item()
 
 void Item::loadMedia(SDL_Renderer* renderer) //sua de load duoc icon khac nhau
 {
-    loadFromFile("assets/sprites/candy(32px).png", renderer);
-    loadFromFile("assets/sprites/energy-drink(32px).png", renderer);
+    loadFromFile("assets/assets/sprites/candy-32.png", renderer);
+    loadFromFile("assets/assets/sprites/energy-drink-32.png", renderer);
 }
 
 void Item::update(int& status, bool& isHittingWall)
@@ -48,7 +48,7 @@ void Item::update(int& status, bool& isHittingWall)
     }
 }
 
-void Item::checkIfEaten(Bird& bird, int& score)
+void Item::checkIfEaten(Bird& bird, int& score, vector <Mix_Chunk*> &sound)
 {
     if((bird.getY(0)+bird.getHeight(0) >= getY(0)) //need to improve, use a better way to detect collision
         &&(bird.getY(0) <= getY(0)+getHeight(0))
@@ -56,6 +56,7 @@ void Item::checkIfEaten(Bird& bird, int& score)
         &&(bird.getX(0) <= getX(0)+getWidth(0)))
         {
             hasBeenEaten = true; //stop rendering item
+            playSound(sound);
             if (activate_effect == true)
             {
                 activateEffect(score);
@@ -117,5 +118,12 @@ int Item::getItemType()
     return item_type;
 }
 
+void Item::playSound(vector <Mix_Chunk*> &sound)
+{
+    if(hasBeenEaten == true)
+    {
+        Mix_PlayChannel(-1, sound.at(3), 0);
 
+    }
+}
 

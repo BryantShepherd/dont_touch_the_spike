@@ -77,3 +77,8 @@ int Texture::getHeight(int i)
 {
     return height.at(i);
 }
+
+bool checkCollision(vector <SDL_Rect> &a, vector <SDL_Rect> &b)
+{
+
+}

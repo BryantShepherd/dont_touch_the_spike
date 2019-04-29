@@ -30,6 +30,7 @@ public:
 protected:
     Background background;
     vector <Button> button;
+    vector <Mix_Chunk*> sound;
     int frame;
 
 private:

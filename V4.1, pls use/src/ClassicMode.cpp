@@ -22,6 +22,8 @@ ClassicMode::~ClassicMode()
 //    background = NULL;
 //    bird = NULL;
 //    spike = NULL;
+    sound.clear();
+    sound.shrink_to_fit();
 }
 
 void ClassicMode::loadMedia(SDL_Renderer* renderer)
@@ -108,7 +110,7 @@ void ClassicMode::update(bool &end_loop, int &mode)
     spike.update(status, score, isHittingWall);
     item.update(status, isHittingWall);
     item.itemAnimation();
-    item.checkIfEaten(bird, score);
+    item.checkIfEaten(bird, score, sound);
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
         if(status == GO_LEFT)
@@ -148,7 +150,6 @@ void ClassicMode::update(bool &end_loop, int &mode)
 void ClassicMode::playSound()
 {
     bird.playSound(sound, isHittingWall);
-
 }
 
 void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)

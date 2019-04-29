@@ -5,8 +5,8 @@ using namespace std;
 HardMode::HardMode()
 {
     isHittingWall = false;
-    status = 0;
-    score = -1;
+    status = GO_LEFT;
+    score = 0;
     frame = 0;
     bird.hardBird(); //change bird speed, ...
 }
@@ -20,6 +20,8 @@ HardMode::~HardMode()
 //    background = NULL;
 //    bird = NULL;
 //    spike = NULL;
+    sound.clear();
+    sound.shrink_to_fit();
 }
 
 void HardMode::update(bool &end_loop, int &mode)
@@ -29,7 +31,7 @@ void HardMode::update(bool &end_loop, int &mode)
     spike.moveSpike(); //move the spike up and down, increase the difficulty
     item.update(status, isHittingWall);
     item.itemAnimation();
-    item.checkIfEaten(bird, score);
+    item.checkIfEaten(bird, score, sound);
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
         if(status == GO_LEFT)

@@ -18,6 +18,8 @@ MainMenu::~MainMenu()
 //    button = NULL;
     button.clear();
     button.shrink_to_fit();
+    sound.clear();
+    sound.shrink_to_fit();
 }
 
 void MainMenu::loadMedia(SDL_Renderer* renderer)
@@ -33,6 +35,8 @@ void MainMenu::loadMedia(SDL_Renderer* renderer)
     button.push_back(Button());
     button.at(1).loadFromFile("assets/RPG_UI/PNG/buttonRound_beige.png", renderer);
     button.at(1).setPosition(10, SCREEN_HEIGHT/4);
+
+    sound.push_back(Mix_LoadWAV("assets/audio/jump.wav"));
 }
 
 void MainMenu::handleEvent(SDL_Event event, bool &end_loop, int &mode)
@@ -73,10 +77,12 @@ void MainMenu::update(bool &end_loop, int &mode)
     if(button.at(0).isHittingButton() == true)
     {
         mode = 1;
+        Mix_PlayChannel( -1, sound.at(0), 0 );
     }
     if(button.at(1).isHittingButton() == true)
     {
         mode = 2;
+        Mix_PlayChannel( -1, sound.at(0), 0 );
     }
 }
 

@@ -4594,7 +4594,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556556556 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\texture.h
+1556561720 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\texture.h
 	<iostream>
 	<string>
 	<vector>
@@ -4658,7 +4658,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556556556 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\mainmenu.h
+1556561179 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\mainmenu.h
 	<iostream>
 	<string>
 	<vector>
@@ -4713,22 +4713,22 @@
 1556556556 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\background.cpp
 	"Background.h"
 
-1556557388 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
+1556557545 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
 	"Bird.h"
 
 1556556556 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\button.cpp
 	"Button.h"
 
-1556557249 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\classicmode.cpp
+1556561342 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\classicmode.cpp
 	"ClassicMode.h"
 
-1556556556 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\hardmode.cpp
+1556561343 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\hardmode.cpp
 	"HardMode.h"
 
 1556556557 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\maincontrol.cpp
 	"MainControl.h"
 
-1556556557 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\mainmenu.cpp
+1556561342 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\mainmenu.cpp
 	"MainMenu.h"
 
 1556557215 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\score.cpp
@@ -5293,7 +5293,7 @@
 1556509734 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\item.cpp
 	"Item.h"
 
-1556556556 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\item.h
+1556560811 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\item.h
 	<iostream>
 	<string>
 	<vector>
@@ -5307,6 +5307,6 @@
 	"time.h"
 	"random"
 
-1556556776 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\item.cpp
+1556560796 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\item.cpp
 	"Item.h"
 

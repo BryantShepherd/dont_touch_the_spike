@@ -28,11 +28,13 @@ public:
     ~Item();
     void loadMedia(SDL_Renderer* renderer);
     void update(int &status, bool&);
-    void checkIfEaten(Bird& bird, int&); //check if item is eaten
+    void checkIfEaten(Bird& bird, int&,vector <Mix_Chunk*> &); //check if item is eaten
     void itemAnimation(); //item move up and down
     bool getItemState(); //return hasBeenEaten
     void activateEffect(int& ); //for each type of item, activate effect accordingly
     int getItemType();
+
+    void playSound(vector <Mix_Chunk*> &sound);
 };
 
 #endif // ITEM_H_INCLUDED
