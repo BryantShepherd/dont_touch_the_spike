@@ -4,7 +4,7 @@ using namespace std;
 
 Bird::Bird()
 {
-    x.push_back(0);
+    x.push_back(20);
     y.push_back(SCREEN_HEIGHT/2.0);
     dx = 0;
     dy = 0;
@@ -33,9 +33,9 @@ Bird::~Bird()
 
 void Bird::loadMedia(SDL_Renderer* renderer)
 {
-    loadFromFile("assets/sprites/yellowbird-downflap.png", renderer);
-    loadFromFile("assets/sprites/yellowbird-midflap.png", renderer);
-    loadFromFile("assets/sprites/yellowbird-upflap.png", renderer);
+    loadFromFile("assets/assets/sprites/redbird-downflap-48.png", renderer);
+    loadFromFile("assets/assets/sprites/redbird-midflap-48.png", renderer);
+    loadFromFile("assets/assets/sprites/redbird-upflap-48.png", renderer);
 }
 
 void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
@@ -80,7 +80,7 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
 
 void Bird::update(int &status, int &score, bool &isHittingWall)
 {
-    isHittingWall = true;
+//    isHittingWall = true;
     if(status == GO_LEFT)
     {
         dx += change_in_dx; //cho de dieu chinh van toc cua cac con chim khac nhau
@@ -91,11 +91,12 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         dx -= change_in_dx;
         dy += change_in_dy;
     }
+
     x.at(0) += dx;
     y.at(0) += dy;
-    if(x.at(0) > SCREEN_WIDTH-34)
+    if(x.at(0) > SCREEN_WIDTH-48-20)
     {
-        x.at(0) = SCREEN_WIDTH-34;
+        x.at(0) = SCREEN_WIDTH-48-20;
         dx *= -1; //fix de chim dap tuong tu nhien hon
         dy *= 0.9;
         status = GO_RIGHT;
@@ -103,9 +104,9 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         score++;
 
     }
-    else if(x.at(0) < 0)
+    else if(x.at(0) < 18)
     {
-        x.at(0) = 0;
+        x.at(0) = 18;
         dx *= -1;
         dy *= 0.9;
         status = GO_LEFT;
@@ -116,14 +117,15 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
     {
         isHittingWall = false;
     }
-    if(y.at(0) > SCREEN_HEIGHT-24)
+
+    if(y.at(0) > SCREEN_HEIGHT-70-48)
     {
-        y.at(0) = SCREEN_HEIGHT-24;
+        y.at(0) = SCREEN_HEIGHT-70-48;
         status = DEATH;
     }
-    if(y.at(0) < 0)
+    if(y.at(0) < 24)
     {
-        y.at(0) = 0;
+        y.at(0) = 24;
         status = DEATH;
     }
 
@@ -144,8 +146,8 @@ void Bird::playSound(vector <Mix_Chunk*> sound, bool & isHittingWall)
 
 void Bird::pause()
 {
-    x.at(0) = 0;
-    y.at(0) = 0;
+    x.at(0) = 18;
+    y.at(0) = 24+24;
     dx = 0;
     dy = 0;
     change_in_dx = 0;

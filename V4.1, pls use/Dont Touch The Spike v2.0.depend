@@ -4594,7 +4594,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556342844 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\texture.h
+1556510421 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\texture.h
 	<iostream>
 	<string>
 	<vector>
@@ -4628,7 +4628,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556342163 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\maincontrol.h
+1556510421 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\maincontrol.h
 	<iostream>
 	<string>
 	<vector>
@@ -4636,6 +4636,8 @@
 	<SDL_image.h>
 	<SDL_ttf.h>
 	<SDL_mixer.h>
+	"Item.h"
+	"Score.h"
 	"Bird.h"
 	"Background.h"
 	"Button.h"
@@ -4670,7 +4672,7 @@
 	"Spike.h"
 	"constant.h"
 
-1556344262 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\classicmode.h
+1556510421 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\classicmode.h
 	<iostream>
 	<string>
 	<vector>
@@ -4678,12 +4680,14 @@
 	<SDL_image.h>
 	<SDL_ttf.h>
 	<SDL_mixer.h>
+	"Item.h"
+	"Score.h"
 	"Bird.h"
 	"Background.h"
 	"Button.h"
 	"Spike.h"
 	"constant.h"
-	"Score.h"
+	"MainMenu.h"
 
 1556343246 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\score.h
 	<iostream>
@@ -4696,7 +4700,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556337071 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\hardmode.h
+1556510421 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\hardmode.h
 	<iostream>
 	<string>
 	<vector>
@@ -4705,41 +4709,37 @@
 	<SDL_ttf.h>
 	<SDL_mixer.h>
 	"ClassicMode.h"
-	"Background.h"
-	"Button.h"
-	"constant.h"
-	"Score.h"
 
-1556343246 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\background.cpp
+1556522031 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\background.cpp
 	"Background.h"
 
-1556387577 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
+1556554803 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
 	"Bird.h"
 
 1556343246 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\button.cpp
 	"Button.h"
 
-1556349860 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\classicmode.cpp
+1556554905 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\classicmode.cpp
 	"ClassicMode.h"
 
-1556349717 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\hardmode.cpp
+1556510421 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\hardmode.cpp
 	"HardMode.h"
 
 1556349769 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\maincontrol.cpp
 	"MainControl.h"
 
-1556343246 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\mainmenu.cpp
+1556524374 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\mainmenu.cpp
 	"MainMenu.h"
 
-1556343246 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\score.cpp
+1556510421 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\score.cpp
 	"Score.h"
 
-1556343246 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\spike.cpp
+1556555017 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\spike.cpp
 	"Spike.h"
 	"time.h"
 	"random"
 
-1556342111 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\texture.cpp
+1556468894 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\texture.cpp
 	"Texture.h"
 
 1556285139 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\main.cpp
@@ -5291,5 +5291,22 @@
 	"ClassicMode.h"
 
 1556509734 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\item.cpp
+	"Item.h"
+
+1556510421 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\item.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Bird.h"
+	"Texture.h"
+	"constant.h"
+	"time.h"
+	"random"
+
+1556518269 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\item.cpp
 	"Item.h"
 

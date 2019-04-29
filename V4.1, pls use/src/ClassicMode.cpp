@@ -35,6 +35,7 @@ void ClassicMode::loadMedia(SDL_Renderer* renderer)
     sound.push_back(Mix_LoadWAV("assets/audio/jump.wav"));
     sound.push_back(Mix_LoadWAV("assets/audio/point.wav"));
     sound.push_back(Mix_LoadWAV("assets/audio/dead.wav"));
+    sound.push_back(Mix_LoadWAV("assets/audio/candy.wav"));
 
 }
 
@@ -147,6 +148,7 @@ void ClassicMode::update(bool &end_loop, int &mode)
 void ClassicMode::playSound()
 {
     bird.playSound(sound, isHittingWall);
+
 }
 
 void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)

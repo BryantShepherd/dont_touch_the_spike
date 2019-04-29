@@ -25,6 +25,6 @@ Background::~Background()
 
 void Background::loadMedia(SDL_Renderer* renderer)
 {
-    loadFromFile("assets/sprites/background-day.png", renderer);
+    loadFromFile("assets/assets/sprites/background.png", renderer);
     loadFromFile("assets/sprites/gameover.png", renderer);
 }

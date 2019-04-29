@@ -11,6 +11,8 @@ Item::Item()
     hasBeenEaten = true;
     activate_effect = false;
     k = 0; //var for item animation
+    x.push_back(0);
+    y.push_back(0);
 }
 
 Item::~Item()
@@ -44,12 +46,11 @@ void Item::update(int& status, bool& isHittingWall)
         }
         hasBeenEaten = false;
     }
-
-
 }
 
 void Item::checkIfEaten(Bird& bird, int& score)
 {
+        cout << 1;
     if((bird.getY(0)+bird.getHeight(0) >= getY(0)) //need to improve, use a better way to detect collision
         &&(bird.getY(0) <= getY(0)+getHeight(0))
         &&(bird.getX(0)+bird.getWidth(0) >= getX(0))
