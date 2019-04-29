@@ -4,8 +4,8 @@ using namespace std;
 
 Bird::Bird()
 {
-    x.push_back(20);
-    y.push_back(SCREEN_HEIGHT/2.0);
+    x.push_back(SCREEN_WIDTH/2.0-26);
+    y.push_back(SCREEN_HEIGHT/2.0-76);
     dx = 0;
     dy = 0;
     change_in_dx = 0.05;

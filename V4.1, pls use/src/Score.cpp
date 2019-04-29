@@ -33,4 +33,5 @@ void Score::renderScore(SDL_Renderer* renderer, int score)
     {
         render(score_string.at(i)-48, (SCREEN_WIDTH-24*score_string.length()-10*(score_string.length()-1))/2 + i*24, 50,getWidth(score_string.at(i)-48) , getHeight(score_string.at(i)-48), renderer, 0, NULL, SDL_FLIP_NONE);
     }
+
 }

@@ -6,8 +6,8 @@ ClassicMode::ClassicMode()
 {
     frame = 0;
     isHittingWall = false;
-    status = 0;
-    score = -1;
+    status = GO_LEFT;
+    score = 0;
 //    background = new Background;
 //    bird = new Bird;
 //    spike = new Spike;
