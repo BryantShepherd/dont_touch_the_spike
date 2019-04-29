@@ -32,7 +32,7 @@ void Item::update(int& status, bool& isHittingWall)
         srand((int) time(0));
         x.clear();
         y.clear();
-        if (status == GO_RIGHT)
+        if (status == GOING_LEFT)
         {
             x.push_back(40); //vi tri x cua keo
             y.push_back(200);
@@ -50,7 +50,9 @@ void Item::update(int& status, bool& isHittingWall)
 
 void Item::checkIfEaten(Bird& bird, int& score)
 {
-    if((bird.getY(0)+bird.getHeight(0) >= getY(0)) //need to improve, use a better way to detect collision
+    if (x.size() != 0 && y.size() != 0)
+    {
+        if((bird.getY(0)+bird.getHeight(0) >= getY(0)) //need to improve, use a better way to detect collision
         &&(bird.getY(0) <= getY(0)+getHeight(0))
         &&(bird.getX(0)+bird.getWidth(0) >= getX(0))
         &&(bird.getX(0) <= getX(0)+getWidth(0)))
@@ -67,9 +69,10 @@ void Item::checkIfEaten(Bird& bird, int& score)
             }
 
         }
-    else //if bird not collide with item
-    {
-        activate_effect = true;
+        else //if bird not collide with item
+        {
+            activate_effect = true;
+        }
     }
 
 }
@@ -81,15 +84,18 @@ bool Item::getItemState()
 
 void Item::itemAnimation() //move candy up and down
 {
-    k++;
-    if (k > 30) //travel distance
+    if (x.size() != 0 && y.size() != 0) //fix loi
     {
-        y.at(0) -= 0.2; //speed
-        if(k >= 2*30) k = 0;
-    }
-    else
-    {
-        y.at(0) += 0.2;
+        k++;
+        if (k > 30) //travel distance
+        {
+            y.at(0) -= 0.2; //speed
+            if(k >= 2*30) k = 0;
+        }
+        else
+        {
+            y.at(0) += 0.2;
+        }
     }
 }
 

@@ -6,8 +6,8 @@ ClassicMode::ClassicMode()
 {
     frame = 0;
     isHittingWall = false;
-    status = 0;
-    score = -1;
+    status = GOING_RIGHT;
+    score = 0;
 //    background = new Background;
 //    bird = new Bird;
 //    spike = new Spike;
@@ -112,7 +112,7 @@ void ClassicMode::update(bool &end_loop, int &mode)
     //cout << mode << endl;
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
-        if(status == GO_LEFT)
+        if(status == GOING_RIGHT)
         {
             if((bird.getY(0)+24 >= spike.getY(i))
                     &&(bird.getY(0) <= spike.getY(i)+10)
@@ -122,7 +122,7 @@ void ClassicMode::update(bool &end_loop, int &mode)
                 status = DEATH;
             }
         }
-        else if(status == GO_RIGHT)
+        else if(status == GOING_LEFT)
         {
             if((bird.getY(0) <= spike.getY(i)+10)
                     &&(bird.getY(0)+24 >= spike.getY(i))
@@ -159,11 +159,11 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
         SDL_RenderClear(renderer);
         SDL_SetRenderDrawColor(renderer,0,0,0,255);
         background.render(background.getMode(), 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
-        if(status == GO_LEFT)
+        if(status == GOING_RIGHT)
         {
 
 
-            bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
+            bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE); //frame/3 for bird animation
             if(!item.getItemState()) item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
 
             for (int i = 0; i< (spike.getSpikeNumber()); i++)
@@ -171,7 +171,7 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
                 spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_HORIZONTAL);
             }
         }
-        else if(status == GO_RIGHT)
+        else if(status == GOING_LEFT)
         {
             //.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);

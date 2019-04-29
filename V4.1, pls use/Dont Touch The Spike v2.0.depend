@@ -5137,7 +5137,7 @@
 	<SDL_ttf.h>
 	<SDL_mixer.h>
 
-1556543268 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\constant.h
+1556555202 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\constant.h
 	<string>
 
 1556418688 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\spike.h
@@ -5244,7 +5244,7 @@
 	<SDL_mixer.h>
 	"ClassicMode.h"
 
-1556543715 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\hardmode.cpp
+1556554834 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\hardmode.cpp
 	"HardMode.h"
 
 1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\maincontrol.cpp
@@ -5256,7 +5256,7 @@
 1556505971 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\score.cpp
 	"Score.h"
 
-1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\spike.cpp
+1556555027 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\spike.cpp
 	"Spike.h"
 	"time.h"
 	"random"
@@ -5284,12 +5284,12 @@
 1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\button.cpp
 	"Button.h"
 
-1556505608 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\bird.cpp
+1556554358 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\bird.cpp
 	"Bird.h"
 
-1556543573 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\classicmode.cpp
+1556554718 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\classicmode.cpp
 	"ClassicMode.h"
 
-1556510219 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\item.cpp
+1556554641 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\item.cpp
 	"Item.h"
 

@@ -5,8 +5,8 @@ using namespace std;
 HardMode::HardMode()
 {
     isHittingWall = false;
-    status = 0;
-    score = -1;
+    status = GOING_RIGHT;
+    score = 0;
     frame = 0;
     bird.hardBird(); //change bird speed, ...
 }
@@ -34,7 +34,7 @@ void HardMode::update(bool &end_loop, int &mode)
     //cout << mode << endl;
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
-        if(status == GO_LEFT)
+        if(status == GOING_RIGHT)
         {
             if((bird.getY(0)+24 >= spike.getY(i))
                     &&(bird.getY(0) <= spike.getY(i)+10)
@@ -44,7 +44,7 @@ void HardMode::update(bool &end_loop, int &mode)
                 status = DEATH;
             }
         }
-        else if(status == GO_RIGHT)
+        else if(status == GOING_LEFT)
         {
             if((bird.getY(0) <= spike.getY(i)+10)
                     &&(bird.getY(0)+24 >= spike.getY(i))

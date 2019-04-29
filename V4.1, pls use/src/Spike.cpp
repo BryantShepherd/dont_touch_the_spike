@@ -37,7 +37,7 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
         setSpikeNumber(score);
         x.clear();
         y.clear();
-        if(status == GO_LEFT)
+        if(status == GOING_RIGHT)
         {
             for(int i = 0; i < spike_number; i++)
             {
@@ -45,7 +45,7 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
                 y.push_back((0 + rand() % (60 + 1 - 0))*height.at(0));
             }
         }
-        else if(status == GO_RIGHT)
+        else if(status == GOING_LEFT)
         {
             for(int i = 0; i < spike_number; i++)
             {
@@ -54,6 +54,7 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
             }
         }
     }
+    //cout << spike_number << endl;
 }
 
 void Spike::setSpikeNumber(int &score)
@@ -77,8 +78,10 @@ void Spike::setSpikeNumber(int &score)
 /*Hard Mode*/
 void Spike::moveSpike()
 {
-    for(int i = 0; i < getSpikeNumber(); i++) //voi tat ca gai
+    //cout << spike_number << endl;
+    for(int i = 0; i < spike_number; i++) //voi tat ca gai
     {
+
         switchDirectionCounter++;
 //        cout << switchDirectionCounter << " ";
         if (switchDirectionCounter > 15*getSpikeNumber())

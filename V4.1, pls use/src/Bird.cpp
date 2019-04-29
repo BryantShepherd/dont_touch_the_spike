@@ -4,7 +4,7 @@ using namespace std;
 
 Bird::Bird()
 {
-    x.push_back(0);
+    x.push_back(SCREEN_WIDTH/2.0);
     y.push_back(SCREEN_HEIGHT/2.0);
     dx = 0;
     dy = 0;
@@ -46,12 +46,12 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
     {
         if(event.key.keysym.sym == SDLK_SPACE && event.key.repeat == 0)
         {
-            if(status == GO_LEFT)
+            if(status == GOING_RIGHT)
             {
                 dx = change_press_dx; //change in velocity when press SPACE
                 dy = change_press_dy;
             }
-            else if(status == GO_RIGHT)
+            else if(status == GOING_LEFT)
             {
                 dx = (-1)*change_press_dx;
                 dy = change_press_dy;
@@ -62,12 +62,12 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
     }
     case SDL_MOUSEBUTTONDOWN:
     {
-        if(status == GO_LEFT)
+        if(status == GOING_RIGHT)
         {
             dx = change_press_dx; //change in velocity when press SPACE
             dy = change_press_dy;
         }
-        else if(status == GO_RIGHT)
+        else if(status == GOING_LEFT)
         {
             dx = (-1)*change_press_dx;
             dy = change_press_dy;
@@ -81,12 +81,12 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
 void Bird::update(int &status, int &score, bool &isHittingWall)
 {
     isHittingWall = true;
-    if(status == GO_LEFT)
+    if(status == GOING_RIGHT)
     {
         dx += change_in_dx; //cho de dieu chinh van toc cua cac con chim khac nhau
         dy += change_in_dy;
     }
-    else if(status == GO_RIGHT)
+    else if(status == GOING_LEFT)
     {
         dx -= change_in_dx;
         dy += change_in_dy;
@@ -98,7 +98,7 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         x.at(0) = SCREEN_WIDTH-34;
         dx *= -1; //fix de chim dap tuong tu nhien hon
         dy *= 0.9;
-        status = GO_RIGHT;
+        status = GOING_LEFT;
         isHittingWall = true;
         score++;
 
@@ -108,7 +108,7 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         x.at(0) = 0;
         dx *= -1;
         dy *= 0.9;
-        status = GO_LEFT;
+        status = GOING_RIGHT;
         isHittingWall = true;
         score++;
     }
