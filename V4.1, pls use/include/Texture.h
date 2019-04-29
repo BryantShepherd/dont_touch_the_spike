@@ -25,7 +25,7 @@ public:
     float getY(int i);
 
 protected:
-    vector <int> width, height;
+    vector <int> width, height; //ưidth, height la float
     vector <float> x, y;
     vector <SDL_Texture*> texture;
 private:

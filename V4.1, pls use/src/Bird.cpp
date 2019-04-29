@@ -80,7 +80,7 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
 
 void Bird::update(int &status, int &score, bool &isHittingWall)
 {
-    isHittingWall = false;
+    isHittingWall = true;
     if(status == GO_LEFT)
     {
         dx += change_in_dx; //cho de dieu chinh van toc cua cac con chim khac nhau
@@ -103,7 +103,7 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         score++;
 
     }
-    if(x.at(0) < 0)
+    else if(x.at(0) < 0)
     {
         x.at(0) = 0;
         dx *= -1;
@@ -111,6 +111,10 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         status = GO_LEFT;
         isHittingWall = true;
         score++;
+    }
+    else
+    {
+        isHittingWall = false;
     }
     if(y.at(0) > SCREEN_HEIGHT-24)
     {

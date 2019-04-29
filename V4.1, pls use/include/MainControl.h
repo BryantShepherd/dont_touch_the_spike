@@ -9,6 +9,8 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 
+#include "Item.h"
+#include "Score.h"
 #include "Bird.h"
 #include "Background.h"
 #include "Button.h"

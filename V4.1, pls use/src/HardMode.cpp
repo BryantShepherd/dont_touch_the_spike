@@ -27,6 +27,9 @@ void HardMode::update(bool &end_loop, int &mode)
     bird.update(status, score, isHittingWall);
     spike.update(status, score, isHittingWall);
     spike.moveSpike(); //move the spike up and down, increase the difficulty
+    item.update(status, isHittingWall);
+    item.itemAnimation();
+    item.checkIfEaten(bird, score);
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
         if(status == GO_LEFT)

@@ -29,7 +29,7 @@ void Score::loadMedia(SDL_Renderer* renderer)
 void Score::renderScore(SDL_Renderer* renderer, int score)
 {
     score_string = to_string(score);        // convert score to string
-    for(int i = 0; i< score_string.length(); i++)
+    for(unsigned int i = 0; i < score_string.length(); i++)
     {
         render(score_string.at(i)-48, (SCREEN_WIDTH-24*score_string.length()-10*(score_string.length()-1))/2 + i*24, 50,getWidth(score_string.at(i)-48) , getHeight(score_string.at(i)-48), renderer, 0, NULL, SDL_FLIP_NONE);
     }

@@ -9,12 +9,14 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 
+#include "Item.h"
+#include "Score.h"
 #include "Bird.h"
 #include "Background.h"
 #include "Button.h"
 #include "Spike.h"
 #include "constant.h"
-#include "Score.h"
+#include "MainMenu.h"
 
 using namespace std;
 
@@ -33,6 +35,7 @@ protected:
     Background background;
     Bird bird;
     Spike spike;
+    Item item;
     Score s_score;
 
     vector<Mix_Chunk*> sound;

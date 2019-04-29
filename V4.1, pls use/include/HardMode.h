@@ -10,10 +10,6 @@
 #include <SDL_mixer.h>
 
 #include "ClassicMode.h"
-#include "Background.h"
-#include "Button.h"
-#include "constant.h"
-#include "Score.h"
 
 using namespace std;
 
