@@ -19,9 +19,10 @@ Item::~Item()
     y.clear();
 }
 
-void Item::loadTexture(SDL_Renderer* renderer) //sua de load duoc icon khac nhau
+void Item::loadMedia(SDL_Renderer* renderer) //sua de load duoc icon khac nhau
 {
     loadFromFile("assets/sprites/candy(32px).png", renderer);
+    loadFromFile("assets/sprites/energy-drink(32px).png", renderer);
 }
 
 void Item::update(int& status, bool& isHittingWall)
@@ -59,9 +60,14 @@ void Item::checkIfEaten(Bird& bird, int& score)
             {
                 activateEffect(score);
                 activate_effect = false;
+
+                srand((int) time(0));
+                item_type = rand() % texture.size(); //randomly choose an item type;
+                //std::cout << item_type << std::endl;
             }
+
         }
-    else
+    else //if bird not collide with item
     {
         activate_effect = true;
     }
@@ -87,7 +93,7 @@ void Item::itemAnimation() //move candy up and down
     }
 }
 
-void Item::activateEffect(int& score)
+void Item::activateEffect(int& score) //need to use other class properties
 {
 //    bool activate_effect = false;
     switch(item_type)
@@ -99,9 +105,16 @@ void Item::activateEffect(int& score)
         }
     case ENERGY_DRINK:
         {
+            std::cout << "I'm a superhero" << std::endl;
             break;
         }
     }
+}
+
+int Item::getItemType()
+{
+
+    return item_type;
 }
 
 

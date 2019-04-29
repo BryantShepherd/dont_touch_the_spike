@@ -30,7 +30,7 @@ void ClassicMode::loadMedia(SDL_Renderer* renderer)
     bird.loadMedia(renderer);
     spike.loadMedia(renderer);
     s_score.loadMedia(renderer);
-    item.loadTexture(renderer);
+    item.loadMedia(renderer);
 
     sound.push_back(Mix_LoadWAV("assets/audio/jump.wav"));
     sound.push_back(Mix_LoadWAV("assets/audio/point.wav"));
@@ -162,7 +162,7 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
             background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
 
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
-            if(!item.getItemState()) item.render(0, item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
+            if(!item.getItemState()) item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
 
             for (int i = 0; i< (spike.getSpikeNumber()); i++)
             {
@@ -173,7 +173,7 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
         {
             background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);
-            if(!item.getItemState()) item.render(0, item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
+            if(!item.getItemState()) item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
             for (int i = 0; i< spike.getSpikeNumber(); i++)
             {
                 spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
