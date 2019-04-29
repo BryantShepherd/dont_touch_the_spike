@@ -29,7 +29,7 @@ public:
 protected:
 
 private:
-    int current_status;
+    int current_status; //what is this
     bool hittingButton;
 };
 

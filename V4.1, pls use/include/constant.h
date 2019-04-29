@@ -14,6 +14,7 @@ const int GO_LEFT = 1;
 const int DEATH = 2;
 
 const int MENU = 0;
+const int GAME_OVER = 0;
 const int CLASSIC = 1;
 const int HARD = 2;
 const int DUEL = 3;

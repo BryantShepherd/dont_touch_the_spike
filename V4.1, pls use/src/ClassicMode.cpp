@@ -108,6 +108,8 @@ void ClassicMode::update(bool &end_loop, int &mode)
     item.update(status, isHittingWall);
     item.itemAnimation();
     item.checkIfEaten(bird, score);
+    background.update(mode); //change background for each mode
+    //cout << mode << endl;
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
         if(status == GO_LEFT)
@@ -155,11 +157,11 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
     if(!end_loop)
     {
         SDL_RenderClear(renderer);
-
-        SDL_SetRenderDrawColor(renderer,255,0,0,255);
+        SDL_SetRenderDrawColor(renderer,0,0,0,255);
+        background.render(background.getMode(), 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
         if(status == GO_LEFT)
         {
-            background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
+
 
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
             if(!item.getItemState()) item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
@@ -171,7 +173,7 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
         }
         else if(status == GO_RIGHT)
         {
-            background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
+            //.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);
             if(!item.getItemState()) item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
             for (int i = 0; i< spike.getSpikeNumber(); i++)
@@ -181,8 +183,8 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
         }
         else if(status >= DEATH)
         {
-            background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
-            background.render(1, (SCREEN_WIDTH-background.getWidth(1))/2, (SCREEN_HEIGHT-background.getHeight(1))/2, background.getWidth(1), background.getHeight(1), renderer, 0, NULL, SDL_FLIP_NONE);
+            //background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
+            background.render(GAME_OVER, (SCREEN_WIDTH-background.getWidth(GAME_OVER))/2, (SCREEN_HEIGHT-background.getHeight(GAME_OVER))/2, background.getWidth(GAME_OVER), background.getHeight(GAME_OVER), renderer, 0, NULL, SDL_FLIP_NONE); //render game over screen
         }
 
         s_score.renderScore(renderer, score);

@@ -20,9 +20,10 @@ public:
     Background();
     ~Background();
     void loadMedia(SDL_Renderer* renderer);       //hàm load toàn bộ texture của đối tượng
-
+    void update(int&);
+    int getMode();
 protected:
-
+    int mode;
 private:
 
 };

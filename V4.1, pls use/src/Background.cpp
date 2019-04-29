@@ -25,6 +25,18 @@ Background::~Background()
 
 void Background::loadMedia(SDL_Renderer* renderer)
 {
-    loadFromFile("assets/sprites/background-day.png", renderer);
     loadFromFile("assets/sprites/gameover.png", renderer);
+    loadFromFile("assets/sprites/background-day.png", renderer);
+    loadFromFile("assets/sprites/background-night.png", renderer);
+
+}
+
+void Background::update(int& game_mode)
+{
+    mode = game_mode;
+}
+
+int Background::getMode() //mode index in constant.h
+{
+    return mode;
 }

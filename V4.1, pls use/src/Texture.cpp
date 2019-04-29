@@ -77,3 +77,8 @@ int Texture::getHeight(int i)
 {
     return height.at(i);
 }
+
+int Texture::getTextureSize()
+{
+    return texture.size();
+}

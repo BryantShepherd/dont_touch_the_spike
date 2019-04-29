@@ -87,7 +87,7 @@ void MainMenu::render(SDL_Renderer* renderer, bool end_loop)
 
     SDL_SetRenderDrawColor(renderer,255,0,0,255);
 
-    background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
+    background.render(CLASSIC, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
     if(frame%30 < 16)
         button.at(0).render(0, button.at(0).getX(0), button.at(0).getY(0), button.at(0).getWidth(0), button.at(0).getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
     else if(frame%30 < 30)

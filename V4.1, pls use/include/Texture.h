@@ -23,6 +23,7 @@ public:
     int getHeight(int i);
     float getX(int i);
     float getY(int i);
+    int getTextureSize();
 
 protected:
     vector <int> width, height; //ưidth, height la float

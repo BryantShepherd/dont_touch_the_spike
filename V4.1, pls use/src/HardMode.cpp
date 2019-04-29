@@ -30,6 +30,8 @@ void HardMode::update(bool &end_loop, int &mode)
     item.update(status, isHittingWall);
     item.itemAnimation();
     item.checkIfEaten(bird, score);
+    background.update(mode); //change background for each mode
+    //cout << mode << endl;
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
         if(status == GO_LEFT)
