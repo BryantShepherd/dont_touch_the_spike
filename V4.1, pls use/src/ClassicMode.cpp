@@ -2,6 +2,7 @@
 
 using namespace std;
 
+bool gPlayMusic = false;
 ClassicMode::ClassicMode()
 {
     frame = 0;
@@ -142,7 +143,15 @@ void ClassicMode::update(bool &end_loop, int &mode)
     if(status == DEATH)
     {
         bird.pause();
-        Mix_PlayChannel( -1, sound.at(2), 0 ); //only play once
+        if (gPlayMusic == false)
+        {
+            Mix_PlayChannel( -1, sound.at(2), 0 ); //only play once
+            gPlayMusic = true;
+        }
+    }
+    else
+    {
+        gPlayMusic = false;
     }
 
 }
