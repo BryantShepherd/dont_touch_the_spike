@@ -27,7 +27,7 @@ public:
     float getDx();
     float getDy();
     void hardBird();
-
+    void setCollider(int &);
     void reset();
 
 protected:
