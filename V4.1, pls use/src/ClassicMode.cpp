@@ -142,7 +142,7 @@ void ClassicMode::update(bool &end_loop, int &mode)
     if(status == DEATH)
     {
         bird.pause();
-        Mix_PlayChannel( -1, sound.at(2), 0 );
+        Mix_PlayChannel( -1, sound.at(2), 0 ); //only play once
     }
 
 }

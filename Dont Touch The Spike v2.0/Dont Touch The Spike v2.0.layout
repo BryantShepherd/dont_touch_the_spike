@@ -2,9 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src\ClassicMode.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\ClassicMode.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="850" topLine="0" />
+			<Cursor1 position="331" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\Bird.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -12,64 +12,9 @@
 			<Cursor1 position="470" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\HardMode.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1967" topLine="19" />
-		</Cursor>
-	</File>
-	<File name="src\Bird.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1826" topLine="59" />
-		</Cursor>
-	</File>
-	<File name="include\Texture.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1023" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\constant.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="364" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Spike.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="984" topLine="4" />
-		</Cursor>
-	</File>
 	<File name="include\Spike.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="688" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Button.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\ClassicMode.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="331" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Background.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="403" topLine="7" />
-		</Cursor>
-	</File>
-	<File name="include\MainControl.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="686" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\HardMode.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="795" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Background.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="397" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -77,19 +22,74 @@
 			<Cursor1 position="569" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="src\ClassicMode.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="850" topLine="66" />
+		</Cursor>
+	</File>
+	<File name="include\Background.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="403" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="include\HardMode.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="795" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Background.cpp" open="1" top="1" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="397" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Button.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Texture.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1023" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\MainControl.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2505" topLine="88" />
+		</Cursor>
+	</File>
+	<File name="src\Texture.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1774" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\constant.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="364" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\MainControl.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="686" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Spike.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="984" topLine="4" />
+		</Cursor>
+	</File>
 	<File name="src\Button.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="375" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\MainControl.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Bird.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2505" topLine="86" />
+			<Cursor1 position="1272" topLine="60" />
 		</Cursor>
 	</File>
-	<File name="src\Texture.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\HardMode.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1774" topLine="16" />
+			<Cursor1 position="1096" topLine="19" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

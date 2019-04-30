@@ -56,12 +56,12 @@ void Item::checkIfEaten(Bird& bird, int& score, vector <Mix_Chunk*> &sound)
         &&(bird.getX(0) <= getX(0)+getWidth(0)))
         {
             hasBeenEaten = true; //stop rendering item
-            playSound(sound);
-            if (activate_effect == true)
+
+            if (activate_effect == true) //put in here to do once
             {
                 activateEffect(score);
                 activate_effect = false;
-
+                playSound(sound);
                 srand((int) time(0));
                 item_type = rand() % texture.size(); //randomly choose an item type;
                 //std::cout << item_type << std::endl;

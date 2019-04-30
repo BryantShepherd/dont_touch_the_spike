@@ -44,6 +44,7 @@
 		<Unit filename="include/Button.h" />
 		<Unit filename="include/ClassicMode.h" />
 		<Unit filename="include/HardMode.h" />
+		<Unit filename="include/Item.h" />
 		<Unit filename="include/MainControl.h" />
 		<Unit filename="include/MainMenu.h" />
 		<Unit filename="include/Score.h" />
@@ -56,6 +57,7 @@
 		<Unit filename="src/Button.cpp" />
 		<Unit filename="src/ClassicMode.cpp" />
 		<Unit filename="src/HardMode.cpp" />
+		<Unit filename="src/Item.cpp" />
 		<Unit filename="src/MainControl.cpp" />
 		<Unit filename="src/MainMenu.cpp" />
 		<Unit filename="src/Score.cpp" />

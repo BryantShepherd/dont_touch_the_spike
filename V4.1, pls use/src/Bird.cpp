@@ -147,7 +147,7 @@ void Bird::playSound(vector <Mix_Chunk*> sound, bool & isHittingWall)
 void Bird::pause()
 {
     x.at(0) = 18;
-    y.at(0) = 24+24;
+    y.at(0) = 24+24; //what is thissss
     dx = 0;
     dy = 0;
     change_in_dx = 0;

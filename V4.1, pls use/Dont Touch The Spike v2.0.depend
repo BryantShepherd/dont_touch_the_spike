@@ -5128,7 +5128,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556505615 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\texture.h
+1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\texture.h
 	<iostream>
 	<string>
 	<vector>
@@ -5137,7 +5137,7 @@
 	<SDL_ttf.h>
 	<SDL_mixer.h>
 
-1556285139 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\constant.h
+1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\constant.h
 	<string>
 
 1556418688 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\spike.h
@@ -5151,7 +5151,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556418688 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\background.h
+1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\background.h
 	<iostream>
 	<string>
 	<vector>
@@ -5181,7 +5181,7 @@
 	"ClassicMode.h"
 	"HardMode.h"
 
-1556418688 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\button.h
+1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\button.h
 	<iostream>
 	<string>
 	<vector>
@@ -5192,7 +5192,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556418688 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\mainmenu.h
+1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\mainmenu.h
 	<iostream>
 	<string>
 	<vector>
@@ -5244,27 +5244,27 @@
 	<SDL_mixer.h>
 	"ClassicMode.h"
 
-1556508455 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\hardmode.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\hardmode.cpp
 	"HardMode.h"
 
 1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\maincontrol.cpp
 	"MainControl.h"
 
-1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\mainmenu.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\mainmenu.cpp
 	"MainMenu.h"
 
-1556505971 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\score.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\score.cpp
 	"Score.h"
 
-1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\spike.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\spike.cpp
 	"Spike.h"
 	"time.h"
 	"random"
 
-1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\texture.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\texture.cpp
 	"Texture.h"
 
-1556509551 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\item.h
+1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\item.h
 	<iostream>
 	<string>
 	<vector>
@@ -5278,19 +5278,19 @@
 	"time.h"
 	"random"
 
-1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\background.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\background.cpp
 	"Background.h"
 
 1556418689 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\button.cpp
 	"Button.h"
 
-1556505608 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\bird.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\bird.cpp
 	"Bird.h"
 
-1556509549 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\classicmode.cpp
+1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\classicmode.cpp
 	"ClassicMode.h"
 
-1556509734 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\item.cpp
+1556597517 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\item.cpp
 	"Item.h"
 
 1556560811 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\item.h

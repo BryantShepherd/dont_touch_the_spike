@@ -32,7 +32,7 @@ Bird::~Bird()
 
 void Bird::loadTexture(SDL_Renderer* renderer)
 {
-    texture.push_back(loadFromFile("assets/sprites/yellowbird-downflap.png", renderer));
+    texture.push_back(loadFromFile("assets/sprites/redbird-flatdesign-48.png", renderer));
     texture.push_back(loadFromFile("assets/sprites/yellowbird-midflap.png", renderer));
     texture.push_back(loadFromFile("assets/sprites/yellowbird-upflap.png", renderer));
 }
