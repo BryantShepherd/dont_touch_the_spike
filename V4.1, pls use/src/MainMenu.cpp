@@ -106,3 +106,9 @@ void MainMenu::render(SDL_Renderer* renderer, bool end_loop)
 
     SDL_RenderPresent(renderer);
 }
+
+void MainMenu::reset()
+{
+    button.at(0).reset();
+    button.at(1).reset();
+}

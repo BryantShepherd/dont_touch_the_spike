@@ -71,11 +71,9 @@ void MainControl::initializeSDL(string window_title, const int&x, const int& y, 
         logSDLError(cout, "Mix_OpenAudio", true);
     }
 
-//    main_menu.loadMedia(renderer);
-//
-//    classic_mode.loadMedia(renderer);
-//
-//    hard_mode.loadMedia(renderer);
+    main_menu.loadMedia(renderer);
+    classic_mode.loadMedia(renderer);
+    hard_mode.loadMedia(renderer);
 }
 
 void MainControl::setMode()
@@ -84,8 +82,9 @@ void MainControl::setMode()
     {
     case MENU:
     {
-        MainMenu main_menu;
-        main_menu.loadMedia(renderer);
+//        MainMenu main_menu;
+//        main_menu.loadMedia(renderer);
+        main_menu.reset();
         while(!end_loop)
         {
             main_menu.handleEvent(event, end_loop, mode);
@@ -98,8 +97,9 @@ void MainControl::setMode()
     }
     case CLASSIC:
     {
-        ClassicMode classic_mode;
-        classic_mode.loadMedia(renderer);
+//        ClassicMode classic_mode;
+//        classic_mode.loadMedia(renderer);
+        classic_mode.reset();
         while(!end_loop)
         {
             classic_mode.handleEvent(event, end_loop, mode);
@@ -116,8 +116,9 @@ void MainControl::setMode()
     }
     case HARD:
     {
-        HardMode hard_mode;
-        hard_mode.loadMedia(renderer);
+//        HardMode hard_mode;
+//        hard_mode.loadMedia(renderer);
+        hard_mode.reset();
         while(!end_loop)
         {
             hard_mode.handleEvent(event, end_loop, mode);

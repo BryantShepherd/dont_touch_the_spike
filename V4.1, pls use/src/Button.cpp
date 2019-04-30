@@ -98,3 +98,10 @@ bool Button::isHittingButton()
 {
     return hittingButton;
 }
+
+
+void Button::reset()
+{
+    current_status = 0;
+    hittingButton = false;
+}

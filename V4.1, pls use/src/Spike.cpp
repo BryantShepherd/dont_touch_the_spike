@@ -98,3 +98,8 @@ int Spike::getSpikeNumber()
 {
     return spike_number;
 }
+
+void Spike::reset()
+{
+    spike_number = 0;
+}

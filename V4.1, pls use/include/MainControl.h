@@ -56,9 +56,9 @@ private:
 //    int status;
 //    int score;
     int mode;
-//    MainMenu main_menu;
-//    ClassicMode classic_mode;
-//    HardMode hard_mode;
+    MainMenu main_menu;
+    ClassicMode classic_mode;
+    HardMode hard_mode;
 };
 
 #endif // MAINCONTROL_H

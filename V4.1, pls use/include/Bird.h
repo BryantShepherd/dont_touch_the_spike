@@ -28,6 +28,8 @@ public:
     float getDy();
     void hardBird();
 
+    void reset();
+
 protected:
     float dx, dy;
     //to change bird properties more easily

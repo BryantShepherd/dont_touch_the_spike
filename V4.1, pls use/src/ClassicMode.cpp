@@ -175,7 +175,8 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
             background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
 
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
-            if(!item.getItemState()) item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
+            if(!item.getItemState())
+                item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
 
             for (int i = 0; i< (spike.getSpikeNumber()); i++)
             {
@@ -186,7 +187,8 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
         {
             background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
             bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);
-            if(!item.getItemState()) item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
+            if(!item.getItemState())
+                item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
             for (int i = 0; i< spike.getSpikeNumber(); i++)
             {
                 spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
@@ -205,4 +207,16 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
 
         SDL_RenderPresent(renderer);
     }
+}
+
+
+void ClassicMode::reset()
+{
+    bird.reset();
+    spike.reset();
+    frame = 0;
+    isHittingWall = false;
+    status = GO_LEFT;
+    score = 0;
+    playMusic = false;
 }

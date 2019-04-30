@@ -31,6 +31,8 @@ public:
     void playSound();
     void render(SDL_Renderer* renderer, bool end_loop);
 
+    void reset();
+
 protected:
     Background background;
     Bird bird;

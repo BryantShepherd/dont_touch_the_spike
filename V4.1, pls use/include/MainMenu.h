@@ -27,6 +27,8 @@ public:
     void update(bool &end_loop, int &mode);
     void render(SDL_Renderer* renderer, bool end_loop);
 
+    void reset();
+
 protected:
     Background background;
     vector <Button> button;

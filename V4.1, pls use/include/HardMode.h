@@ -20,6 +20,8 @@ public:
     ~HardMode();
     void update(bool &end_loop, int& mode);
 
+    void reset();
+
 protected:
 
 private:

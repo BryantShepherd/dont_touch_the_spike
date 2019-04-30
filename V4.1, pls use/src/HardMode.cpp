@@ -54,7 +54,6 @@ void HardMode::update(bool &end_loop, int &mode)
             }
         }
     }
-
     if(bird.getY(0) == 0 || bird.getY(0) == SCREEN_HEIGHT-24)
     {
         status = DEATH;
@@ -74,3 +73,12 @@ void HardMode::update(bool &end_loop, int &mode)
     }
 }
 
+void HardMode::reset()
+{
+    isHittingWall = false;
+    status = GO_LEFT;
+    score = 0;
+    frame = 0;
+    bird.hardBird();
+    spike.reset();
+}
