@@ -2,13 +2,14 @@
 
 using namespace std;
 
-bool gPlayMusic = false;
+
 ClassicMode::ClassicMode()
 {
     frame = 0;
     isHittingWall = false;
     status = GO_LEFT;
     score = 0;
+    playMusic = false;
 //    background = new Background;
 //    bird = new Bird;
 //    spike = new Spike;
@@ -143,15 +144,15 @@ void ClassicMode::update(bool &end_loop, int &mode)
     if(status == DEATH)
     {
         bird.pause();
-        if (gPlayMusic == false)
+        if (playMusic == false)
         {
             Mix_PlayChannel( -1, sound.at(2), 0 ); //only play once
-            gPlayMusic = true;
+            playMusic = true;
         }
     }
     else
     {
-        gPlayMusic = false;
+        playMusic = false;
     }
 
 }

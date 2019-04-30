@@ -43,6 +43,7 @@ protected:
     int frame;
     bool isHittingWall;
     int status;
+    bool playMusic;
 
 private:
 

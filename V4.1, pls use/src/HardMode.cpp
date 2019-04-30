@@ -1,7 +1,6 @@
 #include "HardMode.h"
 
 using namespace std;
-
 HardMode::HardMode()
 {
     isHittingWall = false;
@@ -63,7 +62,15 @@ void HardMode::update(bool &end_loop, int &mode)
     if(status == DEATH)
     {
         bird.pause();
-        Mix_PlayChannel(-1, sound.at(2), 0);
+        if (playMusic == false)
+        {
+            Mix_PlayChannel( -1, sound.at(2), 0 ); //only play once
+            playMusic = true;
+        }
+    }
+    else
+    {
+        playMusic = false;
     }
 }
 
