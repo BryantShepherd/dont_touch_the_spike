@@ -34,7 +34,7 @@ void Item::update(int& status, bool& isHittingWall)
         srand((int) time(0));
         x.clear();
         y.clear();
-        if (status == GO_RIGHT)
+        if (status == GOING_LEFT)
         {
             x.push_back(40); //vi tri x cua keo
             y.push_back(200);
@@ -50,28 +50,32 @@ void Item::update(int& status, bool& isHittingWall)
 
 void Item::checkIfEaten(Bird& bird, int& score, vector <Mix_Chunk*> &sound)
 {
-    if((bird.getY(0)+bird.getHeight(0) >= getY(0)) //need to improve, use a better way to detect collision
-        &&(bird.getY(0) <= getY(0)+getHeight(0))
-        &&(bird.getX(0)+bird.getWidth(0) >= getX(0))
-        &&(bird.getX(0) <= getX(0)+getWidth(0)))
-        {
-            hasBeenEaten = true; //stop rendering item
-
-            if (activate_effect == true) //put in here to do once
-            {
-                activateEffect(score);
-                activate_effect = false;
-                playSound(sound);
-                srand((int) time(0));
-                item_type = rand() % texture.size(); //randomly choose an item type;
-                //std::cout << item_type << std::endl;
-            }
-
-        }
-    else //if bird not collide with item
+    if (x.size() != 0 && y.size() != 0)
     {
-        activate_effect = true;
+        if((bird.getY(0)+bird.getHeight(0) >= getY(0)) //need to improve, use a better way to detect collision
+            &&(bird.getY(0) <= getY(0)+getHeight(0))
+            &&(bird.getX(0)+bird.getWidth(0) >= getX(0))
+            &&(bird.getX(0) <= getX(0)+getWidth(0)))
+            {
+                hasBeenEaten = true; //stop rendering item
+
+                if (activate_effect == true) //put in here to do once
+                {
+                    activateEffect(score);
+                    activate_effect = false;
+                    playSound(sound);
+                    srand((int) time(0));
+                    item_type = rand() % texture.size(); //randomly choose an item type;
+                    //std::cout << item_type << std::endl;
+                }
+
+            }
+        else //if bird not collide with item
+        {
+            activate_effect = true;
+        }
     }
+
 
 }
 
@@ -82,16 +86,20 @@ bool Item::getItemState()
 
 void Item::itemAnimation() //move candy up and down
 {
-    k++;
-    if (k > 30) //travel distance
+    if (x.size() != 0 && y.size() != 0)
     {
-        y.at(0) -= 0.2; //speed
-        if(k >= 2*30) k = 0;
+        k++;
+        if (k > 30) //travel distance
+        {
+            y.at(0) -= 0.2; //speed
+            if(k >= 2*30) k = 0;
+        }
+        else
+        {
+            y.at(0) += 0.2;
+        }
     }
-    else
-    {
-        y.at(0) += 0.2;
-    }
+
 }
 
 void Item::activateEffect(int& score) //need to use other class properties

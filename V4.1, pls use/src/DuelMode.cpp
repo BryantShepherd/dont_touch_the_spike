@@ -1,37 +1,25 @@
-#include "ClassicMode.h"
+#include "DuelMode.h"
 
-using namespace std;
-
-
-ClassicMode::ClassicMode()
+DuelMode::DuelMode()
 {
     frame = 0;
     isHittingWall = false;
     status = GOING_RIGHT;
     score = 0;
     playMusic = false;
-//    background = new Background;
-//    bird = new Bird;
-//    spike = new Spike;
+    winner = 0;
 }
 
-ClassicMode::~ClassicMode()
+DuelMode::~DuelMode()
 {
-//    delete background;
-//    delete bird;
-//    delete spike;
-
-//    background = NULL;
-//    bird = NULL;
-//    spike = NULL;
     sound.clear();
     sound.shrink_to_fit();
 }
-
-void ClassicMode::loadMedia(SDL_Renderer* renderer)
+void DuelMode::loadMedia(SDL_Renderer* renderer)
 {
     background.loadMedia(renderer);
-    bird.loadMedia(renderer);
+    player1.loadMedia(renderer);
+    player2.loadMedia(renderer);
     spike.loadMedia(renderer);
     s_score.loadMedia(renderer);
     item.loadMedia(renderer);
@@ -40,16 +28,16 @@ void ClassicMode::loadMedia(SDL_Renderer* renderer)
     sound.push_back(Mix_LoadWAV("assets/audio/point.wav"));
     sound.push_back(Mix_LoadWAV("assets/audio/dead.wav"));
     sound.push_back(Mix_LoadWAV("assets/audio/candy.wav"));
-
 }
 
-void ClassicMode::handleEvent(SDL_Event event, bool& end_loop, int &mode)
+void DuelMode::handleEvent(SDL_Event event, bool& end_loop, int &mode)
 {
     if(status != DEATH)
     {
         while(SDL_PollEvent(&event))
         {
-            bird.handleEvent(event, status, sound);
+            player1.handleEvent(event, status, sound);
+            player2.handleEvent(event, status, sound);
             switch(event.type)
             {
             case SDL_QUIT:
@@ -106,44 +94,59 @@ void ClassicMode::handleEvent(SDL_Event event, bool& end_loop, int &mode)
     }
 }
 
-void ClassicMode::update(bool &end_loop, int &mode)
+void DuelMode::update(bool &end_loop, int &mode)
 {
-    bird.update(status, score, isHittingWall);
+    player1.update(status, score, isHittingWall);
+    player2.update(status, score, isHittingWall);
     spike.update(status, score, isHittingWall);
-    item.update(status, isHittingWall);
-    item.itemAnimation();
-    item.checkIfEaten(bird, score, sound);
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
         if(status == GOING_RIGHT)
         {
-            if((bird.getY(0)+24 >= spike.getY(i))
-                    &&(bird.getY(0) <= spike.getY(i)+10)
-                    &&(bird.getX(0)+34 >= spike.getX(i))
-                    &&(bird.getX(0) <= spike.getX(i)+30))
+            if((player1.getY(0)+24 >= spike.getY(i))
+                    &&(player1.getY(0) <= spike.getY(i)+10)
+                    &&(player1.getX(0)+34 >= SCREEN_WIDTH - spike.getWidth(0))
+                    &&(player1.getX(0) <= SCREEN_WIDTH - spike.getWidth(0) + 30))
             {
                 status = DEATH;
             }
+
+            if((player2.getY(0) <= spike.getY(i)+10)
+                    &&(player2.getY(0)+24 >= spike.getY(i))
+                    &&(player2.getX(0) <= 30)
+                    &&(player2.getX(0)+30 >= 0))
+            {
+                status = DEATH;
+            }
+
         }
         else if(status == GOING_LEFT)
         {
-            if((bird.getY(0) <= spike.getY(i)+10)
-                    &&(bird.getY(0)+24 >= spike.getY(i))
-                    &&(bird.getX(0) <= spike.getX(i)+30)
-                    &&(bird.getX(0)+30 >= spike.getX(i)))
+            if((player1.getY(0) <= spike.getY(i)+10)
+                    &&(player1.getY(0)+24 >= spike.getY(i))
+                    &&(player1.getX(0) <= 30)
+                    &&(player1.getX(0)+30 >= 0))
+            {
+                status = DEATH;
+            }
+            if((player2.getY(0)+24 >= spike.getY(i))
+                    &&(player2.getY(0) <= spike.getY(i)+10)
+                    &&(player2.getX(0)+34 >= SCREEN_WIDTH - spike.getWidth(0))
+                    &&(player2.getX(0) <= SCREEN_WIDTH - spike.getWidth(0) + 30))
             {
                 status = DEATH;
             }
         }
     }
 
-    if(bird.getY(0) == 0 || bird.getY(0) == SCREEN_HEIGHT-24)
+    if(player1.getY(0) == 0 || player1.getY(0) == SCREEN_HEIGHT-24 || player2.getY(0) == 0 || player2.getY(0) == SCREEN_HEIGHT-24)
     {
         status = DEATH;
     }
     if(status == DEATH)
     {
-        bird.pause();
+        player1.pause();
+        player2.pause();
         if (playMusic == false)
         {
             Mix_PlayChannel( -1, sound.at(2), 0 ); //only play once
@@ -157,46 +160,45 @@ void ClassicMode::update(bool &end_loop, int &mode)
 
 }
 
-void ClassicMode::playSound()
+void DuelMode::playSound()
 {
-    bird.playSound(sound, isHittingWall);
+    player1.playSound(sound, isHittingWall);
+    player2.playSound(sound, isHittingWall);
 }
 
-void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
+void DuelMode::render(SDL_Renderer* renderer, bool end_loop)
 {
 
     if(!end_loop)
     {
         SDL_RenderClear(renderer);
-
         SDL_SetRenderDrawColor(renderer,255,0,0,255);
+        background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
         if(status == GOING_RIGHT)
         {
-            background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
 
-            bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
-            if(!item.getItemState())
-                item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
+            player1.render(frame/3, player1.getX(0), player1.getY(0), player1.getWidth(0), player1.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
+            player2.render(frame/3, player2.getX(0), player2.getY(0), player2.getWidth(0), player2.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);
 
             for (int i = 0; i< (spike.getSpikeNumber()); i++)
             {
                 spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_HORIZONTAL);
+                //spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
             }
         }
         else if(status == GOING_LEFT)
         {
-            background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
-            bird.render(frame/3, bird.getX(0), bird.getY(0), bird.getWidth(0), bird.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);
-            if(!item.getItemState())
-                item.render(item.getItemType(), item.getX(0), item.getY(0), item.getWidth(0), item.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE); //if item hasn't been eaten
+            player1.render(frame/3, player1.getX(0), player1.getY(0), player1.getWidth(0), player1.getHeight(0), renderer, 0, NULL,SDL_FLIP_HORIZONTAL);
+            player2.render(frame/3, player2.getX(0), player2.getY(0), player2.getWidth(0), player2.getHeight(0), renderer, 0, NULL,SDL_FLIP_NONE);
+
             for (int i = 0; i< spike.getSpikeNumber(); i++)
             {
+                //spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_HORIZONTAL);
                 spike.render(0, spike.getX(i), spike.getY(i), spike.getWidth(0), spike.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
             }
         }
         else if(status >= DEATH)
         {
-            background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
             background.render(1, (SCREEN_WIDTH-background.getWidth(1))/2, (SCREEN_HEIGHT-background.getHeight(1))/2, background.getWidth(1), background.getHeight(1), renderer, 0, NULL, SDL_FLIP_NONE);
         }
 
@@ -210,9 +212,10 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
 }
 
 
-void ClassicMode::reset()
+void DuelMode::reset()
 {
-    bird.reset();
+    player1.reset();
+    player2.reset();
     spike.reset();
     frame = 0;
     isHittingWall = false;

@@ -17,7 +17,7 @@ MainControl::MainControl()
 //    isHittingWall = false;
 //    status = 0;
 //    score = -1;
-    mode  = 0;
+    mode = MENU;
 }
 
 MainControl::~MainControl()
@@ -74,6 +74,7 @@ void MainControl::initializeSDL(string window_title, const int&x, const int& y, 
     main_menu.loadMedia(renderer);
     classic_mode.loadMedia(renderer);
     hard_mode.loadMedia(renderer);
+//    duel_mode.loadMedia(renderer);
 }
 
 void MainControl::setMode()
@@ -135,6 +136,19 @@ void MainControl::setMode()
     }
     case DUEL:
     {
+//        duel_mode.reset();
+//        while(!end_loop)
+//        {
+//            duel_mode.handleEvent(event, end_loop, mode);
+//            duel_mode.update(end_loop, mode);
+//            duel_mode.playSound();
+//            if(mode != 3)
+//            {
+//                reset();
+//                break;
+//            }
+//            duel_mode.render(renderer, end_loop);
+//        }
         break;
     }
     }

@@ -8,8 +8,8 @@ Bird::Bird()
     y.push_back(SCREEN_HEIGHT/2.0-76);
     dx = 0;
     dy = 0;
-    change_in_dx = 0.05;
-    change_in_dy = 0.3;
+    ddx = 0.05;
+    ddy = 0.3;
     change_press_dx = 2;
     change_press_dy = -7.5;
     is_key_pressed = false;
@@ -46,12 +46,12 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
     {
         if(event.key.keysym.sym == SDLK_SPACE && event.key.repeat == 0)
         {
-            if(status == GO_LEFT)
+            if(status == GOING_RIGHT)
             {
                 dx = change_press_dx; //change in velocity when press SPACE
                 dy = change_press_dy;
             }
-            else if(status == GO_RIGHT)
+            else if(status == GOING_LEFT)
             {
                 dx = (-1)*change_press_dx;
                 dy = change_press_dy;
@@ -62,17 +62,17 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
     }
     case SDL_MOUSEBUTTONDOWN:
     {
-        if(status == GO_LEFT)
+        if(status == GOING_RIGHT)
         {
             dx = change_press_dx; //change in velocity when press SPACE
             dy = change_press_dy;
         }
-        else if(status == GO_RIGHT)
+        else if(status == GOING_LEFT)
         {
             dx = (-1)*change_press_dx;
             dy = change_press_dy;
         }
-        is_key_pressed = true;
+        is_key_pressed = true; //for playing sound effect
         break;
     }
     }
@@ -81,15 +81,15 @@ void Bird::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound)
 void Bird::update(int &status, int &score, bool &isHittingWall)
 {
 //    isHittingWall = true;
-    if(status == GO_LEFT)
+    if(status == GOING_RIGHT)
     {
-        dx += change_in_dx; //cho de dieu chinh van toc cua cac con chim khac nhau
-        dy += change_in_dy;
+        dx += ddx; //cho de dieu chinh van toc cua cac con chim khac nhau
+        dy += ddy;
     }
-    else if(status == GO_RIGHT)
+    else if(status == GOING_LEFT)
     {
-        dx -= change_in_dx;
-        dy += change_in_dy;
+        dx -= ddx;
+        dy += ddy;
     }
 
     x.at(0) += dx;
@@ -99,8 +99,8 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         x.at(0) = SCREEN_WIDTH-48-20;
         dx *= -1; //fix de chim dap tuong tu nhien hon
         dy *= 0.9;
-        status = GO_RIGHT;
-        isHittingWall = true;
+        status = GOING_LEFT;
+        isHittingWall = true; //for playing sound effect
         score++;
 
     }
@@ -109,7 +109,7 @@ void Bird::update(int &status, int &score, bool &isHittingWall)
         x.at(0) = 18;
         dx *= -1;
         dy *= 0.9;
-        status = GO_LEFT;
+        status = GOING_RIGHT;
         isHittingWall = true;
         score++;
     }
@@ -150,8 +150,8 @@ void Bird::pause()
     y.at(0) = 24+24; //what is thissss
     dx = 0;
     dy = 0;
-    change_in_dx = 0;
-    change_in_dy = 0;
+    ddx = 0;
+    ddy = 0;
     change_press_dx = 0;
     change_press_dy = 0;
 
@@ -163,8 +163,8 @@ void Bird::reset()
     y.at(0)=(SCREEN_HEIGHT/2.0-76);
     dx = 0;
     dy = 0;
-    change_in_dx = 0.05;
-    change_in_dy = 0.3;
+    ddx = 0.05;
+    ddy = 0.3;
     change_press_dx = 2;
     change_press_dy = -7.5;
     is_key_pressed = false;
@@ -187,8 +187,8 @@ void Bird::hardBird()
     y.at(0)=(SCREEN_HEIGHT/2.0-76);
     dx = 0;
     dy = 0;
-    change_in_dx = 0.1;
-    change_in_dy = 0.3;
+    ddx = 0.1;
+    ddy = 0.3;
     change_press_dx = 4;
     change_press_dy = -7.5;
     is_key_pressed = false;

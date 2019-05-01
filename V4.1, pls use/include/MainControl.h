@@ -19,6 +19,7 @@
 #include "MainMenu.h"
 #include "ClassicMode.h"
 #include "HardMode.h"
+#include "DuelMode.h"
 
 using namespace std;
 
@@ -59,6 +60,7 @@ private:
     MainMenu main_menu;
     ClassicMode classic_mode;
     HardMode hard_mode;
+//    DuelMode duel_mode;
 };
 
 #endif // MAINCONTROL_H
