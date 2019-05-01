@@ -27,10 +27,11 @@ public:
     void reset();
 
 protected:
-
-private:
     int current_status;
     bool hittingButton;
+
+private:
+
 };
 
 #endif // BUTTON_H

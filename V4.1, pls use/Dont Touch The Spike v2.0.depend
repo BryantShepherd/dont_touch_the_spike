@@ -4583,7 +4583,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556605686 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\bird.h
+1556645744 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\bird.h
 	<iostream>
 	<string>
 	<vector>
@@ -4594,7 +4594,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556561720 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\texture.h
+1556646311 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\texture.h
 	<iostream>
 	<string>
 	<vector>
@@ -4606,7 +4606,7 @@
 1556556556 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\constant.h
 	<string>
 
-1556556556 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\spike.h
+1556645743 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\spike.h
 	<iostream>
 	<string>
 	<vector>
@@ -4647,7 +4647,7 @@
 	"ClassicMode.h"
 	"HardMode.h"
 
-1556556556 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\button.h
+1556619844 d:\c++\project\dont_touch_the_spike\v4.1, pls use\include\button.h
 	<iostream>
 	<string>
 	<vector>
@@ -4713,19 +4713,19 @@
 1556556556 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\background.cpp
 	"Background.h"
 
-1556606954 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
+1556645713 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\bird.cpp
 	"Bird.h"
 
 1556606342 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\button.cpp
 	"Button.h"
 
-1556605933 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\classicmode.cpp
+1556646200 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\classicmode.cpp
 	"ClassicMode.h"
 
 1556606768 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\hardmode.cpp
 	"HardMode.h"
 
-1556606487 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\maincontrol.cpp
+1556607021 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\maincontrol.cpp
 	"MainControl.h"
 
 1556606342 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\mainmenu.cpp
@@ -4734,12 +4734,12 @@
 1556557215 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\score.cpp
 	"Score.h"
 
-1556605686 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\spike.cpp
+1556645713 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\spike.cpp
 	"Spike.h"
 	"time.h"
 	"random"
 
-1556561720 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\texture.cpp
+1556646311 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\texture.cpp
 	"Texture.h"
 
 1556285139 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\main.cpp

@@ -28,7 +28,7 @@ public:
     int getSpikeNumber();
     void setSpikeNumber(int &score);
     void moveSpike();                   //hard mode
-
+    void setCollider(int &, int &);
     void reset();
 
 protected:
