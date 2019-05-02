@@ -14,9 +14,6 @@ Bird::Bird()
     change_press_dy = -7.5;
     is_key_pressed = false;
     //fix loi dap tuong
-
-    //set per pixel collider
-    collider.resize(3);
 }
 
 Bird::~Bird()
@@ -195,43 +192,4 @@ void Bird::hardBird()
     change_press_dx = 4;
     change_press_dy = -7.5;
     is_key_pressed = false;
-}
-
-void Bird::setCollider(int &status)
-{
-    if(status == GO_RIGHT)
-    {
-        collider.at(0).x = x.at(0)+10;
-        collider.at(0).y = y.at(0)+7;
-        collider.at(0).w = 33;
-        collider.at(0).h = 12;
-
-        collider.at(1).x = x.at(0);
-        collider.at(1).y = y.at(0)+19;
-        collider.at(1).w = 48;
-        collider.at(1).h = 12;
-
-        collider.at(2).x = x.at(0)+10;
-        collider.at(2).y = y.at(0)+31;
-        collider.at(2).w = 33;
-        collider.at(2).h = 12;
-    }
-    else if(status == GO_LEFT)
-    {
-        collider.at(0).x = x.at(0)+7;
-        collider.at(0).y = y.at(0)+7;
-        collider.at(0).w = 33;
-        collider.at(0).h = 12;
-
-        collider.at(1).x = x.at(0);
-        collider.at(1).y = y.at(0)+19;
-        collider.at(1).w = 48;
-        collider.at(1).h = 12;
-
-        collider.at(2).x = x.at(0)+7;
-        collider.at(2).y = y.at(0)+31;
-        collider.at(2).w = 33;
-        collider.at(2).h = 12;
-    }
-
 }
