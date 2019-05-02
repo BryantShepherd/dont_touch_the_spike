@@ -24,12 +24,12 @@ void Player1::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound
         {
             if(status == GOING_RIGHT)
             {
-                dx = change_press_dx; //change in velocity when press SPACE
+                //dx = change_press_dx; //change in velocity when press SPACE
                 dy = change_press_dy;
             }
             else if(status == GOING_LEFT)
             {
-                dx = (-1)*change_press_dx;
+                //dx = (-1)*change_press_dx;
                 dy = change_press_dy;
             }
             is_key_pressed = true;
@@ -61,12 +61,12 @@ void Player2::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound
         {
             if(status == GOING_RIGHT)
             {
-                dx = (-1)*change_press_dx; //change in velocity when press SPACE
+                //dx = (-1)*change_press_dx; //change in velocity when press SPACE
                 dy = change_press_dy;
             }
             else if(status == GOING_LEFT)
             {
-                dx = change_press_dx;
+                //dx = change_press_dx;
                 dy = change_press_dy;
             }
             is_key_pressed = true;
