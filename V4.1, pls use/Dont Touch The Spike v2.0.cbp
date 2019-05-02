@@ -49,6 +49,7 @@
 		<Unit filename="include/MainControl.h" />
 		<Unit filename="include/MainMenu.h" />
 		<Unit filename="include/Player.h" />
+		<Unit filename="include/Rock.h" />
 		<Unit filename="include/Score.h" />
 		<Unit filename="include/Spike.h" />
 		<Unit filename="include/Texture.h" />
@@ -64,6 +65,7 @@
 		<Unit filename="src/MainControl.cpp" />
 		<Unit filename="src/MainMenu.cpp" />
 		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Rock.cpp" />
 		<Unit filename="src/Score.cpp" />
 		<Unit filename="src/Spike.cpp" />
 		<Unit filename="src/Texture.cpp" />

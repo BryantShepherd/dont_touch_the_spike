@@ -10,6 +10,7 @@
 #include <SDL_mixer.h>
 
 #include "Item.h"
+#include "Rock.h"
 #include "Score.h"
 #include "Bird.h"
 #include "Background.h"
@@ -37,6 +38,7 @@ protected:
     Background background;
     Bird bird;
     Spike spike;
+    Rock rock;
     Item item;
     Score s_score;
 

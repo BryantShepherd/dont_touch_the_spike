@@ -35,6 +35,7 @@ void ClassicMode::loadMedia(SDL_Renderer* renderer)
     spike.loadMedia(renderer);
     s_score.loadMedia(renderer);
     item.loadMedia(renderer);
+    rock.loadMedia(renderer);
 
     sound.push_back(Mix_LoadWAV("assets/audio/jump.wav"));
     sound.push_back(Mix_LoadWAV("assets/audio/point.wav"));
@@ -110,30 +111,47 @@ void ClassicMode::update(bool &end_loop, int &mode)
 {
     bird.update(status, score, isHittingWall);
     spike.update(status, score, isHittingWall);
+    rock.update(score, isHittingWall);
     item.update(status, isHittingWall);
     item.itemAnimation();
     item.checkIfEaten(bird, score, sound);
     for(int i = 0; i < spike.getSpikeNumber(); i++)
     {
-        if(status == GOING_RIGHT)
+//        if(status == GOING_RIGHT)
+//        {
+//            if((bird.getY(0)+24 >= spike.getY(i))
+//                    &&(bird.getY(0) <= spike.getY(i)+10)
+//                    &&(bird.getX(0)+34 >= spike.getX(i))
+//                    &&(bird.getX(0) <= spike.getX(i)+30))
+//            {
+//                status = DEATH;
+//            }
+//        }
+//        else if(status == GOING_LEFT)
+//        {
+//            if((bird.getY(0) <= spike.getY(i)+10)
+//                    &&(bird.getY(0)+24 >= spike.getY(i))
+//                    &&(bird.getX(0) <= spike.getX(i)+30)
+//                    &&(bird.getX(0)+30 >= spike.getX(i)))
+//            {
+//                status = DEATH;
+//            }
+//        }
+        bird.setCollider(status);
+        spike.setCollider(i, status);
+        if(checkCollision(bird.getCollider(), spike.getCollider()) == true)
         {
-            if((bird.getY(0)+24 >= spike.getY(i))
-                    &&(bird.getY(0) <= spike.getY(i)+10)
-                    &&(bird.getX(0)+34 >= spike.getX(i))
-                    &&(bird.getX(0) <= spike.getX(i)+30))
-            {
-                status = DEATH;
-            }
+            status =  DEATH;
         }
-        else if(status == GOING_LEFT)
+    }
+
+    for(int i = 0; i < rock.getRockNumber(); i++)
+    {
+        bird.setCollider(status);
+        rock.setCollider(i);
+        if(checkCollision(bird.getCollider(), rock.getCollider()) == true)
         {
-            if((bird.getY(0) <= spike.getY(i)+10)
-                    &&(bird.getY(0)+24 >= spike.getY(i))
-                    &&(bird.getX(0) <= spike.getX(i)+30)
-                    &&(bird.getX(0)+30 >= spike.getX(i)))
-            {
-                status = DEATH;
-            }
+            status =  DEATH;
         }
     }
 
@@ -199,7 +217,11 @@ void ClassicMode::render(SDL_Renderer* renderer, bool end_loop)
             background.render(0, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, renderer, 0, NULL, SDL_FLIP_NONE);
             background.render(1, (SCREEN_WIDTH-background.getWidth(1))/2, (SCREEN_HEIGHT-background.getHeight(1))/2, background.getWidth(1), background.getHeight(1), renderer, 0, NULL, SDL_FLIP_NONE);
         }
+        for(int i = 0; i < rock.getRockNumber(); i++)
+        {
+            rock.render(0, rock.getX(i), rock.getY(i), rock.getWidth(0), rock.getHeight(0), renderer, 0, NULL, SDL_FLIP_NONE);
 
+        }
         s_score.renderScore(renderer, score);
         frame++;
         if(frame/3 >= 3)
@@ -214,6 +236,7 @@ void ClassicMode::reset()
 {
     bird.reset();
     spike.reset();
+    rock.reset();
     frame = 0;
     isHittingWall = false;
     status = GOING_RIGHT;

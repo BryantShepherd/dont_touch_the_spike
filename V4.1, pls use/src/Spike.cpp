@@ -59,19 +59,19 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
 void Spike::setSpikeNumber(int &score)
 {
     if (score <= 1)
-            spike_number = 2;
-        else if(score <= 4)
-            spike_number = 3;
-        else if (score <= 10)
-            spike_number = 4;
-        else if (score <= 15)
-            spike_number = 5;
-        else if (score <= 25)
-            spike_number = 6;
-        else if(score <= 40)
-            spike_number = 7;
-        else
-            spike_number = 8;
+        spike_number = 1;
+    else if(score <= 6)
+        spike_number = 2;
+    else if (score <= 12)
+        spike_number = 3;
+    else if (score <= 20)
+        spike_number = 4;
+    else if (score <= 30)
+        spike_number = 5;
+    else if(score <= 50)
+        spike_number = 6;
+    else
+        spike_number = 7;
 }
 
 /*Hard Mode*/
@@ -102,4 +102,82 @@ int Spike::getSpikeNumber()
 void Spike::reset()
 {
     spike_number = 0;
+}
+
+void Spike::setCollider(int &i, int &status)
+{
+    if(status == GOING_LEFT)
+    {
+        collider.at(0).x = x.at(i);
+        collider.at(0).y = y.at(i)+4;
+        collider.at(0).w = 4;
+        collider.at(0).h = 6;
+
+        collider.at(1).x = x.at(i);
+        collider.at(1).y = y.at(i)+10;
+        collider.at(1).w = 10;
+        collider.at(1).h = 6;
+
+        collider.at(2).x = x.at(i);
+        collider.at(2).y = y.at(i)+16;
+        collider.at(2).w = 16;
+        collider.at(2).h = 6;
+
+        collider.at(3).x = x.at(i);
+        collider.at(3).y = y.at(i)+22;
+        collider.at(3).w = 22;
+        collider.at(3).h = 6;
+
+        collider.at(4).x = x.at(i);
+        collider.at(4).y = y.at(i)+28;
+        collider.at(4).w = 16;
+        collider.at(4).h = 6;
+
+        collider.at(5).x = x.at(i);
+        collider.at(5).y = y.at(i)+34;
+        collider.at(5).w = 10;
+        collider.at(5).h = 6;
+
+        collider.at(6).x = x.at(i);
+        collider.at(6).y = y.at(i)+40;
+        collider.at(6).w = 4;
+        collider.at(6).h = 6;
+    }
+    else if(status == GOING_RIGHT)
+    {
+        collider.at(0).x = x.at(i)+24-4;
+        collider.at(0).y = y.at(i)+4;
+        collider.at(0).w = 4;
+        collider.at(0).h = 6;
+
+        collider.at(1).x = x.at(i)+24-10;
+        collider.at(1).y = y.at(i)+10;
+        collider.at(1).w = 10;
+        collider.at(1).h = 6;
+
+        collider.at(2).x = x.at(i)+24-16;
+        collider.at(2).y = y.at(i)+16;
+        collider.at(2).w = 16;
+        collider.at(2).h = 6;
+
+        collider.at(3).x = x.at(i)+24-22;
+        collider.at(3).y = y.at(i)+22;
+        collider.at(3).w = 22;
+        collider.at(3).h = 6;
+
+        collider.at(4).x = x.at(i)+24-16;
+        collider.at(4).y = y.at(i)+28;
+        collider.at(4).w = 16;
+        collider.at(4).h = 6;
+
+        collider.at(5).x = x.at(i)+24-10;
+        collider.at(5).y = y.at(i)+34;
+        collider.at(5).w = 10;
+        collider.at(5).h = 6;
+
+        collider.at(6).x = x.at(i)+24-4;
+        collider.at(6).y = y.at(i)+40;
+        collider.at(6).w = 4;
+        collider.at(6).h = 6;
+    }
 }

@@ -81,7 +81,7 @@ void MainMenu::update(bool &end_loop, int &mode)
     }
     if(button.at(1).isHittingButton() == true)
     {
-        mode = 2;
+        mode = 3;
         Mix_PlayChannel( -1, sound.at(0), 0 );
     }
 }

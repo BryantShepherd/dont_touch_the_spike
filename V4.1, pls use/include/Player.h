@@ -12,6 +12,7 @@ public:
     void reset();
 
 protected:
+
 };
 
 class Player2 : public Bird
@@ -23,6 +24,9 @@ public:
     int getPlayerNumber();
     void reset();
     void update(int &status, int &score, bool &isHittingWall);
+
+protected:
+
 };
 
 #endif // PLAYER_H_INCLUDED
