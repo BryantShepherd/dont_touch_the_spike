@@ -199,7 +199,7 @@ void Bird::hardBird()
 
 void Bird::setCollider(int &status)
 {
-    if(status == GO_RIGHT)
+    if(status == GOING_LEFT)
     {
         collider.at(0).x = x.at(0)+10;
         collider.at(0).y = y.at(0)+7;
@@ -216,7 +216,7 @@ void Bird::setCollider(int &status)
         collider.at(2).w = 33;
         collider.at(2).h = 12;
     }
-    else if(status == GO_LEFT)
+    else if(status == GOING_RIGHT)
     {
         collider.at(0).x = x.at(0)+7;
         collider.at(0).y = y.at(0)+7;

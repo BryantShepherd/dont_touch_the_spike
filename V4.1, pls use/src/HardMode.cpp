@@ -81,4 +81,5 @@ void HardMode::reset()
     frame = 0;
     bird.hardBird();
     spike.reset();
+    rock.reset();
 }

@@ -57,7 +57,7 @@ void Player2::handleEvent(SDL_Event event, int &status, vector<Mix_Chunk*> sound
     {
     case SDL_KEYDOWN:
     {
-        if(event.key.keysym.sym == SDLK_RETURN && event.key.repeat == 0)
+        if(event.key.keysym.sym == SDLK_BACKSPACE && event.key.repeat == 0)
         {
             if(status == GOING_RIGHT)
             {
@@ -95,7 +95,7 @@ void Player2::reset()
     dx = 0;
     dy = 0;
     ddx = 0.1;
-    ddy = 0;
+    ddy = 0.0;
     change_press_dx = 0;
     change_press_dy = -7.5;
     is_key_pressed = false;

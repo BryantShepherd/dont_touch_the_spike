@@ -60,17 +60,17 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
 void Spike::setSpikeNumber(int &score)
 {
     if (score <= 1)
-        spike_number = 2;
+        spike_number = 1;
     else if(score <= 6)
-        spike_number = 3;
+        spike_number = 2;
     else if (score <= 12)
-        spike_number = 4;
+        spike_number = 3;
     else if (score <= 20)
-        spike_number = 5;
+        spike_number = 4;
     else if (score <= 30)
-        spike_number = 6;
+        spike_number = 5;
     else if(score <= 50)
-        spike_number = 7;
+        spike_number = 6;
     else
         spike_number = 7;
 }
@@ -108,7 +108,7 @@ void Spike::reset()
 
 void Spike::setCollider(int &i, int &status)
 {
-    if(status == GO_RIGHT)
+    if(status == GOING_LEFT)
     {
         collider.at(0).x = x.at(i);
         collider.at(0).y = y.at(i)+4;
@@ -145,7 +145,7 @@ void Spike::setCollider(int &i, int &status)
         collider.at(6).w = 4;
         collider.at(6).h = 6;
     }
-    else if(status == GO_LEFT)
+    else if(status == GOING_RIGHT)
     {
         collider.at(0).x = x.at(i)+24-4;
         collider.at(0).y = y.at(i)+4;

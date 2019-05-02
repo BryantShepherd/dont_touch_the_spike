@@ -60,7 +60,7 @@ private:
     MainMenu main_menu;
     ClassicMode classic_mode;
     HardMode hard_mode;
-//    DuelMode duel_mode;
+    DuelMode duel_mode;
 };
 
 #endif // MAINCONTROL_H
