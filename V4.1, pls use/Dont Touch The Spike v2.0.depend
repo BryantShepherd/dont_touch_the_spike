@@ -5119,7 +5119,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556680635 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\bird.h
+1556771807 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\bird.h
 	<iostream>
 	<string>
 	<vector>
@@ -5130,7 +5130,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\texture.h
+1556771807 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\texture.h
 	<iostream>
 	<string>
 	<vector>
@@ -5142,7 +5142,7 @@
 1556683097 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\constant.h
 	<string>
 
-1556418688 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\spike.h
+1556771807 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\spike.h
 	<iostream>
 	<string>
 	<vector>
@@ -5164,7 +5164,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556709561 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\maincontrol.h
+1556771935 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\maincontrol.h
 	<iostream>
 	<string>
 	<vector>
@@ -5184,7 +5184,7 @@
 	"HardMode.h"
 	"DuelMode.h"
 
-1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\button.h
+1556771807 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\button.h
 	<iostream>
 	<string>
 	<vector>
@@ -5250,7 +5250,7 @@
 1556683094 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\hardmode.cpp
 	"HardMode.h"
 
-1556709555 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\maincontrol.cpp
+1556771919 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\maincontrol.cpp
 	"MainControl.h"
 
 1556621070 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\mainmenu.cpp
@@ -5259,12 +5259,12 @@
 1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\score.cpp
 	"Score.h"
 
-1556706425 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\spike.cpp
+1556771807 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\spike.cpp
 	"Spike.h"
 	"time.h"
 	"random"
 
-1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\texture.cpp
+1556771807 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\texture.cpp
 	"Texture.h"
 
 1556581869 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\item.h
@@ -5287,10 +5287,10 @@
 1556621070 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\button.cpp
 	"Button.h"
 
-1556683097 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\bird.cpp
+1556771807 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\bird.cpp
 	"Bird.h"
 
-1556706134 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\classicmode.cpp
+1556771807 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\classicmode.cpp
 	"ClassicMode.h"
 
 1556706525 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\item.cpp
@@ -5313,7 +5313,7 @@
 1556717898 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\item.cpp
 	"Item.h"
 
-1556708438 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\player.cpp
+1556772068 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\player.cpp
 	"Player.h"
 
 1556708438 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\player.h

@@ -7,7 +7,6 @@ using namespace std;
 Spike::Spike()
 {
     spike_number = 0;
-    collider.resize(7);
 }
 
 Spike::~Spike()
@@ -27,7 +26,7 @@ Spike::~Spike()
 
 void Spike::loadMedia(SDL_Renderer* renderer)
 {
-    loadFromFile("assets/assets/sprites/spike.png", renderer);
+    loadFromFile("assets/sprites/spike.png", renderer);
 }
 
 void Spike::update(int &status, int & score, bool &isHittingWall)
@@ -42,16 +41,16 @@ void Spike::update(int &status, int & score, bool &isHittingWall)
         {
             for(int i = 0; i < spike_number; i++)
             {
-                x.push_back(SCREEN_WIDTH - width.at(0)-17);
-                y.push_back(48 + rand() % (8) * (height.at(0)+8));
+                x.push_back(SCREEN_WIDTH - width.at(0));
+                y.push_back((0 + rand() % (60 + 1 - 0))*height.at(0));
             }
         }
         else if(status == GOING_LEFT)
         {
             for(int i = 0; i < spike_number; i++)
             {
-                x.push_back(18);
-                y.push_back(48 + rand() % (8) * (height.at(0)+8));
+                x.push_back(0);
+                y.push_back((0 + rand() % (60 + 1 - 0))*height.at(0));
             }
         }
     }
@@ -85,8 +84,7 @@ void Spike::moveSpike()
         if (switchDirectionCounter > 15*getSpikeNumber())
         {
             y.at(i) -= 2;
-            if(switchDirectionCounter >= 30*getSpikeNumber())
-                switchDirectionCounter = 0;
+            if(switchDirectionCounter >= 30*getSpikeNumber()) switchDirectionCounter = 0;
         }
         else
         {

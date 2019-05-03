@@ -14,9 +14,6 @@ Bird::Bird()
     change_press_dy = -7.5;
     is_key_pressed = false;
     //fix loi dap tuong
-
-    //set per pixel collider
-    collider.resize(3);
 }
 
 Bird::~Bird()

@@ -24,18 +24,14 @@ public:
     float getX(int i);
     float getY(int i);
 
-    vector <SDL_Rect> getCollider();
-
 protected:
     vector <int> width, height; //ưidth, height la float
     vector <float> x, y;
     vector <SDL_Texture*> texture;
-    vector <SDL_Rect> collider;
-
 private:
 
 };
 
-bool checkCollision(const vector <SDL_Rect> &a, const vector <SDL_Rect> &b);
+bool checkCollision(vector <SDL_Rect> &a, vector <SDL_Rect> &b);
 
 #endif // TEXTURE_H
