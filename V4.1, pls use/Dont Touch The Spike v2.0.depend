@@ -5119,7 +5119,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1556771807 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\bird.h
+1556809369 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\bird.h
 	<iostream>
 	<string>
 	<vector>
@@ -5130,7 +5130,7 @@
 	"Texture.h"
 	"constant.h"
 
-1556771807 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\texture.h
+1556809557 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\texture.h
 	<iostream>
 	<string>
 	<vector>
@@ -5209,7 +5209,7 @@
 	"Spike.h"
 	"constant.h"
 
-1556621069 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\classicmode.h
+1556809107 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\classicmode.h
 	<iostream>
 	<string>
 	<vector>
@@ -5218,6 +5218,7 @@
 	<SDL_ttf.h>
 	<SDL_mixer.h>
 	"Item.h"
+	"Rock.h"
 	"Score.h"
 	"Bird.h"
 	"Background.h"
@@ -5247,13 +5248,13 @@
 	<SDL_mixer.h>
 	"ClassicMode.h"
 
-1556683094 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\hardmode.cpp
+1556809108 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\hardmode.cpp
 	"HardMode.h"
 
 1556771919 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\maincontrol.cpp
 	"MainControl.h"
 
-1556621070 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\mainmenu.cpp
+1556809108 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\mainmenu.cpp
 	"MainMenu.h"
 
 1556581869 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\score.cpp
@@ -5313,10 +5314,10 @@
 1556717898 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\item.cpp
 	"Item.h"
 
-1556772068 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\player.cpp
+1556809108 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\player.cpp
 	"Player.h"
 
-1556708438 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\player.h
+1556809107 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\player.h
 	"Bird.h"
 
 1556707129 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\duelmode.cpp
@@ -5351,6 +5352,22 @@
 	"constant.h"
 
 1556779765 source:d:\c++\project\dont_touch_the_spike\v4.1, pls use\src\rock.cpp
+	"Rock.h"
+	"time.h"
+	"random"
+
+1556809107 d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\include\rock.h
+	<iostream>
+	<string>
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"Texture.h"
+	"constant.h"
+
+1556809108 source:d:\my_personal_file\learning_material\coding\dont_touch_the_spikes\v4.1, pls use\src\rock.cpp
 	"Rock.h"
 	"time.h"
 	"random"
